@@ -28,6 +28,7 @@ A FINE LAVORO per rendere effettivi i cambiamenti/modifiche (bisogna essere nell
 	git add .
 	git commit -m "Descrizione dei cambiamenti apportati"
 	git push origin main
+(inserire le credenziali richieste)
 
 
 Buon lavoro =)

@@ -1,0 +1,20 @@
+TUTORIAL FAST GITHUB DA CMD WINDOWS
+
+Dato per certo di aver installato git (https://git-scm.com/downloads) sul pc e aver aperto un nuovo account:
+
+1)Apri cmd.exe (windows powershell va bene comunque)
+2)digita i seguenti comandi:
+	
+	md CartellaProgetto\NomeProgetto 	la cartella creata sarà all'interno della cartella utente, scegliere un nome a piacere)
+	cd CartellaProgetto\NomeProgetto
+	git clone https://github.com/dac4as/C3.git
+	
+in questo modo si avrà una cartella sincronizzata con i file che stiamo usando :)
+
+Non dimenticare ad inizio sessione di lavoro, prima di apportare modifiche al progetto di digitare su cmd.exe
+
+	cd CartellaProgetto\NomeProgetto
+	git pull https://github.com/dac4as/C3.git
+
+per rimanere sempre aggiornati sui vari cambiamenti che il team apporta
+Buon lavoro

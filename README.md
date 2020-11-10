@@ -26,35 +26,35 @@ COMMERCIANTE----(assegna pacco)---->CORRIERE----(consegna pacco)---->CLIENTE(pag
 La vista dell'app varia in base alla tipologia di utente registrato (tipo UBER)
 
 COMMERCIANTE:
-• Vende la merce(gestione prezzi);
-• Si registra sulla piattaforma come Commerciante;
-• Definisce punto di ritiro merce (assegna codice univoco);
-• (Può avere statistiche di utenti locali?);
-• Può creare offerte e promozioni merce;
-• Può consorziarsi (mettersi d'accordo ndr) con shop di stessa categoria per definire vendite combinate;
+- Vende la merce(gestione prezzi);
+- Si registra sulla piattaforma come Commerciante;
+- Definisce punto di ritiro merce (assegna codice univoco);
+- (Può avere statistiche di utenti locali?);
+- Può creare offerte e promozioni merce;
+- Può consorziarsi (mettersi d'accordo ndr) con shop di stessa categoria per definire vendite combinate;
 il tutto al fine di vendere la propria merce sulla piattaforma
 
 CLIENTE:
-• Può ricercare un prodotto e ricevere come risultato i negozi che lo vendono;
-• Effettua pagamenti al Commerciante;
-• Riceve alert:
-    • Per le promozioni (che possono essere filtrate)
-    • Tracciamento pacco (arrivo al punto di ritiro)
-    • Eventuali problemi di spedizione/ordine
-• Viene autenticato al momento della ricezione del pacco tramite il codice emesso dal venditore
+- Può ricercare un prodotto e ricevere come risultato i negozi che lo vendono;
+- Effettua pagamenti al Commerciante;
+- Riceve alert:
+    - Per le promozioni (che possono essere filtrate)
+    - Tracciamento pacco (arrivo al punto di ritiro)
+    - Eventuali problemi di spedizione/ordine
+- Viene autenticato al momento della ricezione del pacco tramite il codice emesso dal venditore
 
 *************************************************************************************************************************************************
 
 Secondo colloquio:
-• 
+- 
 Continuo definizione attori principali (sono 3 ma ne sono stati descritti 2):
 
 CORRIERE:
-• Effettua un login come corriere
-• Ha un sistema di feedback "gestito" da Clienti e Commercianti
-• Ha una "categoria" dove specifica il veicolo che utilizza (leggero, medio, pesante, etc.)
-• Consegna i pacchi nei punti di ritrovo (amazon locker)
-• Può notificare cliente e/o commerciante per eventuali problemi/info
+- Effettua un login come corriere
+- Ha un sistema di feedback "gestito" da Clienti e Commercianti
+- Ha una "categoria" dove specifica il veicolo che utilizza (leggero, medio, pesante, etc.)
+- Consegna i pacchi nei punti di ritrovo (amazon locker)
+- Può notificare cliente e/o commerciante per eventuali problemi/info
 
 
 

@@ -40,3 +40,6 @@ CLIENTE:
     -Tracciamento pacco (arrivo al punto di ritiro)
     -Eventuali problemi di spedizione/ordine
 -Viene autenticato al momento della ricezione del pacco tramite il codice emesso dal venditore
+
+
+La vista dell'app varia in base alla tipologia di utente registrato (tipo UBER)

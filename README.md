@@ -38,8 +38,8 @@ il tutto al fine di vendere la propria merce sulla piattaforma
 
 CLIENTE:
 - Può ricercare un prodotto e ricevere come risultato i negozi che lo vendono;
-- Crea ordine;
-- Elimina/modifica ordine;
+- Crea un carrello inserendo degli articoli all'interno
+- Crea/Elimina/modifica ordine;
 - Effettua pagamenti al Commerciante;
 - Riceve alert:
     - Per le promozioni (che possono essere filtrate)
@@ -60,3 +60,51 @@ CORRIERE:
 - Ha una "categoria" dove specifica il veicolo che utilizza (leggero, medio, pesante, etc.);
 - Consegna i pacchi nei punti di ritrovo (amazon locker);
 - Può notificare cliente e/o commerciante per eventuali problemi/info;
+
+*************************************************************************************************************************************************
+
+Terzo colloquio:
+- 
+Analisi intensa e dettagliata di 3 casi d'uso.
+
+COMMERCIANTE:
+- Riceve/gestisce ordini presentati dai clienti:
+	- Riceve ordine
+	- Verifica pagamento
+	- Controlla se gli articoli siano presenti 
+	(se non presenti invia una data in cui l'articolo sarà di nuovo presente)
+	- Cerca corriere disponibile nella zona 
+	- Assegna una commissione al corriere trovato
+	- Notifico avanzamento ordine
+
+CLIENTE:
+- Può ricercare un prodotto e ricevere come risultato i negozi che lo vendono:
+	- Effettua una ricerca per prodotto/ categoria/ commerciante
+	- Interagisce con il prodotto/ commerciante (può visualizzare dettagli degli articoli/ commercianti)
+	- Crea un carrello inserendo degli articoli all'interno (può aggiungere più articoli dello stesso tipo)
+	- Visualizza subtotale 	
+	- Modifica carrello
+	
+- Crea/Elimina/modifica ordine:
+	-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

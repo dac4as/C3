@@ -69,9 +69,9 @@ Analisi intensa e dettagliata di 3 casi d'uso.
 
 COMMERCIANTE:
 - Riceve/gestisce ordini presentati dai clienti:
-	- Riceve ordine
-	- Verifica pagamento
-	- Controlla se gli articoli siano presenti 
+	- Riceve ordine //caso d'uso a parte
+	- Verifica che il pagamento sia stato effettuato (il pagamento lo gestisce il sistema)
+	- Controlla se gli articoli siano presenti //può gestirla il sistema
 	(se non presenti invia una data in cui l'articolo sarà di nuovo presente)
 	- Cerca corriere disponibile nella zona 
 	- Assegna una commissione al corriere trovato

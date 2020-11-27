@@ -97,8 +97,85 @@ Discussione su come organizzarsi nei prossimi colloqui.
 
 *************************************************************************************************************************************************
 
-Quarto colloquio:
+Quinto colloquio:
 - 
+Definizione miogliorata dei casi d'uso
+
+
+COMMERCIANTE:
+- Si registra sulla piattaforma come Commerciante
+- Aggiunta dati personali (nome, cognome, indirizzo, recapito)
+- Aggiunta prodotti da vendere
+- Contatta/notifica altri commercianti per possibili consorzi
+- Rimozione prodotti
+- Gestione possibili offerte (a tempo)
+- Visualizzazione magazzino
+- Visualizza ordini
+- Annullare un ordine
+- Notifica il sistema che l'ordine è pronto
+- Contatta/notifica clienti
+- Contatta/notifica corriere
+- Visualizza alert (da sistema) -> 
+	• arrivo nuovo ordine
+	• se qualche oggetto manca o sta per finire nel magazzino
+	• partenza/arrivo pacco
+	• messaggi vari
+
+- da rivedere :
+	- Può avere statistiche di utenti locali
+	- Definisce punto di ritiro merci (con annesso codice univoco)
+
+
+CLIENTE:
+- Si registra sulla piattaforma come Cliente
+- Aggiunta dati personali (nome, cognome, indirizzo, recapito)
+- Ricerca prodotto/cateogoria/combinate
+- Aggiunta prodotti carrello
+- Rimozione prodotti carrello
+- Visualizza promozioni
+- Selezione metodo di pagamento
+- Creazione ordine 
+- Effettua pagamenti
+- Annullamento ordine (entro certi limiti )
+- Contatta commerciante
+- Contatta corriere 
+- Visualizza alert (da sistema) -> 
+	• promozioni
+	• stato ordine
+	• eventuali problemi di spedizione/ordine
+	• messaggi vari
+	• punto di arrivo pacco (con annesso codice identificativo)
+	
+
+CORRIERE:
+- Si registra sulla piattaforma come Corriere
+- Aggiunta dati personali (nome, cognome, indirizzo, recapito)
+- Aggiunta tipo di veicolo utilizzato (leggero, medio, pesante, etc.)
+- Modifica stato (disponibile/non disponibile)
+- Visualizza lista ordini vicini
+- Seleziona ordine che vuole consegnare
+- Vizualizza ordini assegnati (tipologia pacco, destinazione)
+- Notifica il sistema che l'ordine è in partenza/arrivo
+- Notifica il sistema che l'ordine è stato consegnato
+- Contatta commerciante
+- Contatta cliente
+- Visualizza alert (da sistema) -> 
+	• ordini assegnati
+	• messaggi vari
+
+
+SISTEMA
+- Notifica commerciante riguardo nuovi ordini
+- Notifica commerciante per la carenza di un certo prodotto
+- Notifica commerciante stato consegna ordine
+- Verifica pagamenti
+- Definisce punto di ritiro merce
+- Notifica cliente promozioni
+- Notifica cliente stato ordine
+- Notifica cliente per eventuali problemi
+- Notifica cliente il punto di arrivo pacco (con annesso codice identificativo)
+- Notifica commerciante di eventuali ordini
+
 
 
 

@@ -1,0 +1,42 @@
+LAVORO SVOLTO ( VISUAL PARADIGM) ---> 3 ATTORI + SERVER DI SISTEMA
+
+CLIENTE
+-visualizza promozioni
+-seleziona metodo di pagamento
+-ricerca prodotto/categoria
+-aggiunta nel carrello INCLUDE rimozione dal carrello
+-registraz. come cliente INCLUDE agg. dati personali ( note: nome, cognome, indirizzo, recapito)
+-creazione ordine INCLUDE annullamento ordine EXTENDS superamento limiti per annullamento
+-effettua pagamenti EXTENDS verifica credito
+-contatta commerciante
+-contatta corriere
+ P.S. - si collega al caso d'uso del server "notifica cliente"
+P.S.2 - si collega al caso d'uso che hanno in comune i 3 attori : logIN EXTENDS password errata
+CORRIERE
+-modifica stato ( note: disponibile / non disponibile)
+-visualizza ordini assegnati (note : tipologia pacco e destinazione) INCLUDE seleziona ordini & INCLUDE lista ordini vicini
+-aggiunta veicolo in uso ( note: leggero, medio , pesante)
+-registrazione come corriere INCLUDE aggiunta dati personali ( note: nome, cognome, indirizzo , recapito)
+-contatta commerciante 
+-contatta cliente
+P.S. -si collega al caso d'uso del server " notifica corriere" 
+P.S.2 -  si collega al caso d'uso che hanno in comune i 3 attori : logIN EXTENDS password errata    
+COMMERCIANTE
+-visualizza magazzino
+-contatta per consorzi
+-gestione offerte
+-aggiunta prodotti INCLUDE rimozione prodotti
+-visualizza ordine INCLUDE annulla ordine
+-registrazione come commerciante INCLUDE aggiunta dati personali (note: nome, cognome, indirizzo, recapito)
+notifica sistema (note: ordine pronto)
+-contatta cliente
+-contatta corriere
+P.S. -si collega al caso d'uso del server " notifica commerciante" 
+P.S.2 -  si collega al caso d'uso che hanno in comune i 3 attori : logIN EXTENDS password errata 
+
+SERVER DI SISTEMA
+-verifica pagamenti
+-notifica commerciante EXTENDS ( arrivo nuovi ordini, mostra stato ordine, avviso prodotti mancanti)
+-notifica corriere EXTENDS ( segnalazione problemi, assegnazione nuovi ordini)
+-notifica cliente EXTENDS ( segnalazione problemi, mostra punto ritiro, stato ordine promozioni)
+

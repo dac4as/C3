@@ -105,7 +105,7 @@ Definizione miogliorata dei casi d'uso
 COMMERCIANTE:
 - Si registra sulla piattaforma come Commerciante
 - Aggiunta dati personali (nome, cognome, indirizzo, recapito)
-- Aggiunta prodotti da vendere
+- *Aggiunta prodotti da vendere
 - Contatta/notifica altri commercianti per possibili consorzi
 - Rimozione prodotti
 - Gestione possibili offerte (a tempo)
@@ -129,11 +129,12 @@ CLIENTE:
 - Si registra sulla piattaforma come Cliente
 - Aggiunta dati personali (nome, cognome, indirizzo, recapito)
 - Ricerca prodotto/categoria/commerciante
-- Aggiunta prodotti carrello
+- *Aggiunta prodotti carrello
+- *Creazione ordine
 - Rimozione prodotti carrello
 - Visualizza promozioni
 - Selezione metodo di pagamento
-- Creazione ordine 
+
 - Effettua pagamenti
 - Annullamento ordine (entro certi limiti)
 - Contatta commerciante
@@ -150,10 +151,8 @@ CORRIERE:
 - Si registra sulla piattaforma come Corriere
 - Aggiunta dati personali (nome, cognome, indirizzo, recapito)
 - Aggiunta tipo di veicolo utilizzato (leggero, medio, pesante, etc.)
-- Modifica stato (disponibile/non disponibile)
-- Visualizza lista ordini vicini
-- Seleziona ordine che vuole consegnare
-- Vizualizza ordini assegnati (tipologia pacco, destinazione)
+- *Modifica stato (disponibile/non disponibile)
+- *Vizualizza ordini assegnati (tipologia pacco, destinazione)
 - Notifica il sistema che l'ordine è in partenza/arrivo
 - Notifica il sistema che l'ordine è stato consegnato
 - Contatta commerciante
@@ -165,18 +164,20 @@ CORRIERE:
 
 
 SISTEMA
-- Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)
+- Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)**
 - Gestione ordini (ordinamento in base alla priorità)
+- Verifica pagamenti
+- *Definisce punto di ritiro merce
 - Notifica commerciante riguardo nuovi ordini
 - Notifica commerciante per la carenza di un certo prodotto
 - Notifica commerciante stato consegna ordine
-- Verifica pagamenti
-- Definisce punto di ritiro merce
 - Notifica cliente promozioni
 - Notifica cliente stato ordine
 - Notifica cliente per eventuali problemi
 - Notifica cliente il punto di arrivo pacco (con annesso codice identificativo)
 - Notifica commerciante di eventuali ordini
+
+ASTERISCHI -> casi d'uso principali
 
 *************************************************************************************************************************************************
 
@@ -238,7 +239,17 @@ Settimo colloquio:
 - 
 Individuazione e sviluppo (specifico) casi d'uso principali
 
+Casi d'uso principali:
 
+- Aggiunta prodotti da vendere
+- Aggiunta prodotti carrello
+- Creazione ordine
+- Modifica stato (disponibile/non disponibile)
+- Vizualizza ordini assegnati (tipologia pacco, destinazione)
+- Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)
+- Definisce punto di ritiro merce
 
- 
+Sviluppati:
 
+- Aggiunta prodotti carrello
+- Creazione ordine (da rivedere)

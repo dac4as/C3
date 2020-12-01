@@ -83,10 +83,9 @@ CLIENTE:
 	- Interagisce con il prodotto/ commerciante (può visualizzare dettagli degli articoli/ commercianti)
 	- Crea un carrello inserendo degli articoli all'interno (può aggiungere più articoli dello stesso tipo)
 	- Visualizza subtotale 	
-	- Modifica carrello
+	- Modifica carrello	
 	
-- Crea/Elimina/modifica ordine:
-	-
+- Crea/Elimina/modifica ordine
 
 *************************************************************************************************************************************************
 

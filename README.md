@@ -199,7 +199,7 @@ PS:
 • si collega al caso d'uso che hanno in comune i 3 attori : logIN EXTENDS password errata
 
 CORRIERE:
-- modifica stato ( note: disponibile / non disponibile)
+- modifica stato ( note: disponibile / non disponibile) (occupato se sta consegnando)
 - visualizza ordini assegnati (note : tipologia pacco e destinazione) 
 - aggiunta veicolo in uso ( note: leggero, medio , pesante)
 - registrazione come corriere INCLUDE aggiunta dati personali ( note: nome, cognome, indirizzo , recapito)
@@ -250,5 +250,7 @@ Casi d'uso principali:
 
 Sviluppati:
 
+- Aggiunta prodotti da vendere
+- Creazione ordine	
 - Aggiunta prodotti carrello
-- Creazione ordine (da rivedere)
+- Modifica stato (disponibile/non disponibile)

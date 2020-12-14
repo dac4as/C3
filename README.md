@@ -104,7 +104,7 @@ Definizione miogliorata dei casi d'uso
 COMMERCIANTE:
 - Si registra sulla piattaforma come Commerciante
 - Aggiunta dati personali (nome, cognome, indirizzo, recapito)
-- *Aggiunta prodotti da vendere
+- *Aggiunta prodotti da vendere (codice univoco, nome, descrizione, quantità, prezzo)
 - Contatta/notifica altri commercianti per possibili consorzi
 - Rimozione prodotti
 - Gestione possibili offerte (a tempo)
@@ -234,7 +234,7 @@ SERVER DI SISTEMA:
 
 *************************************************************************************************************************************************
 
-Settimo colloquio:
+Settimo e Ottavo colloquio:
 - 
 Individuazione e sviluppo (specifico) casi d'uso principali
 
@@ -254,3 +254,8 @@ Sviluppati:
 - Creazione ordine	
 - Aggiunta prodotti carrello
 - Modifica stato (disponibile/non disponibile)
+- Vizualizza ordini assegnati (tipologia pacco, destinazione)
+
+(controllare)
+- Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)
+- Definisce punto di ritiro merce

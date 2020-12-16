@@ -2,5 +2,8 @@
 
 public class Magazzino {
 
-    //private ASortOfList<> listaProdotti=???;
+    private ASortOfList<Prodotto> listaProdotti=;
+
+
+    //TODO compareTo() per categorie
 }

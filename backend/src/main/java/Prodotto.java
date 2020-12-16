@@ -14,15 +14,17 @@ public class Prodotto {
 
     private String descrizione;
 
-    //private Cat categoria;???
+    private Categoria categoria;
 
-    public Prodotto(int codice, String nome, int disponibilita, float prezzo, String descrizione)
+
+    public Prodotto(int codice, String nome, int disponibilita, float prezzo, String descrizione, Categoria categoria)
     {
         this.codice=codice;
         this.nome=nome;
         this.disponibilita=disponibilita;
         this.prezzo=prezzo;
         this.descrizione=descrizione;
+        this.categoria=categoria;
     }
 
     //getters and setters
@@ -64,6 +66,14 @@ public class Prodotto {
 
     public void setDescrizione(String descrizione) {
         this.descrizione = descrizione;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
 

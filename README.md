@@ -259,3 +259,10 @@ Sviluppati:
 (controllare)
 - Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)
 - Definisce punto di ritiro merce
+
+*************************************************************************************************************************************************
+
+Nono colloquio:
+- 
+Inizio Implementazione prime classi
+

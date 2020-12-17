@@ -1,8 +1,11 @@
-//lista di Prodotti, getters and setters
+import java.util.Set;
 
+/**
+ lista di Prodotti, getters and setters
+*/
 public class Magazzino {
 
-    private ASortOfList<Prodotto> listaProdotti=;
+    //private Set<Prodotto> listaProdotti=;
 
 
     //TODO compareTo() per categorie

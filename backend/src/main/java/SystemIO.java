@@ -3,7 +3,7 @@ import java.util.Set;
 public interface SystemIO {
 
     Set<Prodotto> readList(String path);
-    //void writeList(String path, Set<Prodotto>); sta ceppa de identifier
+    void writeList(String path, Set<Prodotto> list); //sta ceppa de identifier
 
 }
 

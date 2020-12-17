@@ -1,6 +1,6 @@
-/*
+/**
 Classe che contiene l'istanziazione di un oggetto di tipo prodotto, il prodotto verrà creato al momento dell'aggiunta da parte
-di un comemrciante al magazzino (che sono quindi disponibili per la vendita), che è una lista
+di un comemrciante al magazzino (che sono quindi disponibili per la vendita), che è una lista ed eventualmente salvato.
  */
 public class Prodotto {
 
@@ -76,5 +76,15 @@ public class Prodotto {
         this.categoria = categoria;
     }
 
-
+    @Override
+    public String toString() {
+        return "Prodotto{" +
+                "nome='" + nome + '\'' +
+                ", codice=" + codice +
+                ", disponibilita=" + disponibilita +
+                ", prezzo=" + prezzo +
+                ", descrizione='" + descrizione + '\'' +
+                ", categoria=" + categoria +
+                '}';
+    }
 }

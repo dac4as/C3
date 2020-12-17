@@ -1,8 +1,9 @@
 import java.io.*;
-import java.util.TreeSet;
+import java.util.*;
 
 public class IOFileTXT {
-    public static void writeList(String path, TreeSet<Prodotto> fileContent) throws IOException
+
+    public void writeList(String path, List<Prodotto> fileContent) throws IOException
     {
         File file=new File(path);
         FileWriter fileWriter=new FileWriter(file,false);
@@ -13,4 +14,6 @@ public class IOFileTXT {
         }
         bufferedWriter.close();
     }
+
+
 }

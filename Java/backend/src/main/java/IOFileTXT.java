@@ -3,19 +3,20 @@ import java.util.*;
 
 public class IOFileTXT implements SystemIO{
 
+    //TODO implementare scrittura in locale
     @Override
-    public Set<Prodotto> readList(String path) {
+    public List<Prodotto> readList(String path) {
         return null;
     }
 
     @Override
-    public void writeList(String path, List<Prodotto> list) throws IOException {
+    public void writeList(String path, Magazzino mag) throws IOException {
         File file = new File(path);
         FileWriter fileWriter = new FileWriter(file, false);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
 
-        for (Prodotto p : list) {
+        for (Prodotto p : mag.getListaProdotti()) {
             bufferedWriter.append(p.toString());
             bufferedWriter.newLine();
         }

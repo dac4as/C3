@@ -1,1 +1,0 @@
-Prodotto{nome='Palla', codice=123, disponibilita=10, prezzo=5.0, descrizione='Oggetto sferico che rimbalza', categoria=Sport}

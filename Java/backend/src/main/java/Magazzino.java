@@ -24,6 +24,12 @@ public class Magazzino {
         return listaProdotti;//.toString()?
     }
 
+    /*public Commerciante getProprietario(){
+       String nome=this.proprietario.nome;
+       String cognome=this.proprietario.cognome;
+       return proprietario.nome;//.toString()?
+    }*/
+
     public boolean addProdotto(Prodotto p){
         if (p==null) throw new NullPointerException();
         return listaProdotti.add(p);

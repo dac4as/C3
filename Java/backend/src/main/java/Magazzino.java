@@ -16,7 +16,7 @@ public class Magazzino {
     private Commerciante proprietario;
 
     public Magazzino(List<Prodotto> listaProdotti, Commerciante proprietario) {
-        this.listaProdotti = new ArrayList<>(listaProdotti);
+        this.listaProdotti = new ArrayList<Prodotto>(listaProdotti);
         this.proprietario = proprietario;
     }
 

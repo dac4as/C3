@@ -18,6 +18,7 @@ public class Prodotto {
 
 
     public Prodotto(int codice, String nome, int disponibilita, float prezzo, String descrizione, Categoria categoria) {
+        if(nome==null) throw new NullPointerException();
         this.codice = codice;
         this.nome = nome;
         this.disponibilita = disponibilita;

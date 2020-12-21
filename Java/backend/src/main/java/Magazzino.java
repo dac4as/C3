@@ -34,9 +34,13 @@ public class Magazzino {
     }*/
 
     public boolean addProdotto(Prodotto p){
-        if (p==null) throw new NullPointerException();
-        return listaProdotti.add(p);
+        if (p==null || p.getNome()==null) throw new NullPointerException();
+        if(p.getCodice()==0) throw new IllegalArgumentException("Codice invalido");
+            return listaProdotti.add(p);
     }
 
+    public Commerciante getProprietario(){
+        return this.proprietario;
+    }
 
 }

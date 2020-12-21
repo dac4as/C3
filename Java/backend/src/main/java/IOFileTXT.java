@@ -27,7 +27,7 @@ public class IOFileTXT implements SystemIO{
     }
 }
 
-/*
+/*toString(?)
 for (Categoria cat : Categoria.values()) {
     System.out.println(":" + cat + "\n" + ";");
 }

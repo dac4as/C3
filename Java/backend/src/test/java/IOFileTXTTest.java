@@ -20,8 +20,8 @@ class IOFileTXTTest {
 
         //modificata la lista di prodotti in Magazzino (vecchio metodo)
         List<Prodotto> magazzino = new ArrayList<>();
-        magazzino.add(prod1);
-        magazzino.add(prod2);
+        //magazzino.add(prod1);
+        //magazzino.add(prod2);
         //write.writeList(filePath, magazzino);deprecated
         //System.out.println(magazzino.toString());
 

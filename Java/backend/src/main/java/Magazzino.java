@@ -18,6 +18,7 @@ public class Magazzino {
     private Commerciante proprietario;
 
     public Magazzino(List<Prodotto> listaProdotti, Commerciante proprietario) {
+        if(listaProdotti==null||proprietario==null) throw new NullPointerException();
         this.listaProdotti = new ArrayList<Prodotto>(listaProdotti);
         this.proprietario = proprietario;
     }

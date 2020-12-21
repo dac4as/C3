@@ -1,9 +1,9 @@
 import Users.Commerciante;
 import org.junit.jupiter.api.Test;
-import java.io.IOException;
-import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 class IOFileTXTTest {
 
@@ -16,7 +16,7 @@ class IOFileTXTTest {
         Prodotto prod2 = new Prodotto(456, "Drone", 8, 70.99f, "Coso che vola", Categoria.Elettronica);
 
         //modificata la lista di prodotti in Magazzino
-        List<Prodotto> magazzino = new ArrayList<Prodotto>();//ho aggiunto <Prodotto> che mi dava errore
+        List<Prodotto> magazzino = new ArrayList<>();//ho aggiunto <Prodotto> che mi dava errore
         magazzino.add(prod1);
         magazzino.add(prod2);
         //write.writeList(filePath, magazzino);deprecated

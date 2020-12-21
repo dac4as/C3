@@ -1,3 +1,5 @@
+
+
 import Users.Commerciante;
 
 import java.util.ArrayList;
@@ -19,6 +21,7 @@ public class Magazzino {
         this.listaProdotti = new ArrayList<Prodotto>(listaProdotti);
         this.proprietario = proprietario;
     }
+
 
     public List<Prodotto> getListaProdotti(){
         return listaProdotti;//.toString()?

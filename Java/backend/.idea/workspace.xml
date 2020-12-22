@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Sviluppo della classe commerciante e test">
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Cambio modulo test Junit -&gt; gradle">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ListaProdotti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazzino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prodotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +49,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1lyPpPvBr8pJ7Z6t6rmxh1Mw4AM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -145,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608577323523</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cambio modulo test Junit -&gt; gradle">
+      <created>1608649304628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608649304628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)" />
     <MESSAGE value="Sviluppo della classe commerciante e test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sviluppo della classe commerciante e test" />
+    <MESSAGE value="Cambio modulo test Junit -&gt; gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio modulo test Junit -&gt; gradle" />
   </component>
 </project>

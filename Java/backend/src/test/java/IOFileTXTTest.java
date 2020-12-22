@@ -13,10 +13,11 @@ class IOFileTXTTest {
         IOFileTXT write = new IOFileTXT();
         String filePath = "src/test/resources/Magazzino.txt";
         //String filePath="resources/Magazzino.txt";
-        Prodotto prod1 = new Prodotto(123, "Palla", 10, 5, "Oggetto sferico che rimbalza", Categoria.Sport);
-        Prodotto prod2 = new Prodotto(456, "Drone", 8, 70.99f, "Coso che vola", Categoria.Elettronica);
-        Prodotto prod3 = new Prodotto(0, "NullPointer", 0, 0.0f, "Coso che (non) crasha", null);//throws NullPointer()
-        Prodotto prod4 = new Prodotto(789, "Carte", 3, 500.99f, "Carte da gioco", null);//not throws anything
+        Prodotto prod1 = new Prodotto("Palla", "Adidas", 10, 5, "Oggetto sferico che rimbalza", Categoria.Sport);
+        Prodotto prod2 = new Prodotto( "Drone", "DJY", 8, 70.99f, "Coso che vola", Categoria.Elettronica);
+        assertThrows(NullPointerException.class, () -> new Prodotto("NullPointer","Java", 0, 0.0f, "Coso che (non) crasha", null));
+        assertThrows(NullPointerException.class,() -> new Prodotto("Carte", "Konami", 3, 500.99f, "Carte da gioco", null));
+
 
         //modificata la lista di prodotti in Magazzino (vecchio metodo)
         List<Prodotto> magazzino = new ArrayList<>();
@@ -34,11 +35,10 @@ class IOFileTXTTest {
 
         assertTrue(m.addProdotto(prod1));
         assertTrue(m.addProdotto(prod2));
-        assertThrows(IllegalArgumentException.class, () -> m.addProdotto(prod3));
-        assertDoesNotThrow(() -> m.addProdotto(prod4));
-        assertTrue(m.addProdotto(prod4));
+
+        //assertTrue(m.addProdotto(prod4));
         write.writeList(filePath, m);
         System.out.println("Sto visualizzando il magazzino del negozio di " + m.getProprietario().getNome() +" "+ m.getProprietario().getCognome());
-        System.out.println(magazzino);
+        System.out.println(m.getListaProdotti().toString());
     }
 }

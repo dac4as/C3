@@ -1,6 +1,4 @@
 Prodotto{nome='Palla', codice=123, disponibilita=10, prezzo=5.0, descrizione='Oggetto sferico che rimbalza', categoria=Sport}
 Prodotto{nome='Drone', codice=456, disponibilita=8, prezzo=70.99, descrizione='Coso che vola', categoria=Elettronica}
-Prodotto{nome='Palla', codice=123, disponibilita=10, prezzo=5.0, descrizione='Oggetto sferico che rimbalza', categoria=Sport}
-Prodotto{nome='Drone', codice=456, disponibilita=8, prezzo=70.99, descrizione='Coso che vola', categoria=Elettronica}
 Prodotto{nome='Carte', codice=789, disponibilita=3, prezzo=500.99, descrizione='Carte da gioco', categoria=null}
 Prodotto{nome='Carte', codice=789, disponibilita=3, prezzo=500.99, descrizione='Carte da gioco', categoria=null}

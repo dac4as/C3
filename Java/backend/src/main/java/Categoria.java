@@ -7,9 +7,29 @@ public enum Categoria {
             return "Elettronica";
         }
     },
-    Alimentare,
-    Moda,
-    Bricolage,
-    Sport;
+    Alimentare{
+        @Override
+        public String toString() {
+            return "Alimentare";
+        }
+    },
+    Moda{
+        @Override
+        public String toString() {
+            return "Moda";
+        }
+    },
+    Bricolage{
+        @Override
+        public String toString() {
+            return "Bricolage";
+        }
+    },
+    Sport{
+        @Override
+        public String toString() {
+            return "Sport";
+        }
+    };
 
 }

@@ -1,15 +1,6 @@
-
-
 import Users.Commerciante;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 
 /**
@@ -24,45 +15,47 @@ public class Magazzino implements Comparable<Prodotto> {
     private Commerciante proprietario;
 
     public Magazzino(List<Prodotto> listaProdotti, Commerciante proprietario) {
-        if(listaProdotti==null||proprietario==null) throw new NullPointerException();
-        this.listaProdotti = new ArrayList<Prodotto>(listaProdotti);
+        if (listaProdotti == null || proprietario == null) throw new NullPointerException();
+        this.listaProdotti = new ArrayList<>(listaProdotti);
         this.proprietario = proprietario;
     }
 
+    @Override
+    public String toString() {
+        return "Magazzino{\n" +
+                "\tlistaProdotti=" + listaProdotti.toString() +
+                "\n\tproprietario=" + proprietario.getCognome() +
+                "}\n";
+    }
 
-    public List<Prodotto> getListaProdotti(){
+    public List<Prodotto> getListaProdotti() {
         return listaProdotti;
     }
 
-    /*public Prodotto increaseQuantity(Prodotto p){
+    public void increaseQuantity(Prodotto p, int newQuantity) {
+        if (newQuantity < 0) throw new IllegalArgumentException("La quantità deve essere maggiore di zero.");
         int indexP = this.listaProdotti.indexOf(p);
-        Prodotto tmp = this.listaProdotti.get(indexP);
-        listaProdotti.set()
-    }*/
+        Prodotto tmp = listaProdotti.get(indexP);
+        tmp.setDisponibilita(tmp.getDisponibilita() + newQuantity);
+        listaProdotti.set(indexP, tmp);
+    }
 
-    public boolean addProdotto(Prodotto p) throws IOException {
-        if (p==null || p.getNome()==null) throw new NullPointerException();
-        if(listaProdotti.contains(p))//aumenta la quantità
-        {
-            BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-            int scelta;
-            System.out.println("Prodotto già presente nel Magazzino\nAnnullare(1) o aggiornare(2)?[1/2]");
-            scelta = console.read();
-            switch(scelta) {
-                case 1:
-                    return false;
-                case 2:
-                    int indexP = this.listaProdotti.indexOf(p);
-                    System.out.println("Bella zio");
-                    return false;
-                    //listaProdotti.set()
-                default: return false;
-            }
-        }
+    public void decreaseQuantity(Prodotto p, int newQuantity) {
+        if (newQuantity < 0) throw new IllegalArgumentException("La quantità deve essere maggiore di zero.");
+        int indexP = this.listaProdotti.indexOf(p);
+        Prodotto tmp = listaProdotti.get(indexP);
+        if (newQuantity > tmp.getDisponibilita())
+            throw new IllegalArgumentException("La quantità da rimuovere eccede lo stock.");
+        tmp.setDisponibilita(tmp.getDisponibilita() - newQuantity);
+        listaProdotti.set(indexP, tmp);
+    }
+
+    public boolean addProdotto(Prodotto p) {
+        if (listaProdotti.contains(p)) throw new IllegalArgumentException("Prodotto già presente nel magazzino.");
         return listaProdotti.add(p);
     }
 
-    public Commerciante getProprietario(){
+    public Commerciante getProprietario() {
         return this.proprietario;
     }
 

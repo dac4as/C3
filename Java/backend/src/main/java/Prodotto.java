@@ -36,10 +36,6 @@ public class Prodotto {
     }
 
 
-    /*public int hashCode(){
-        return Objects.hash(nome,categoria);//identificativo basato sull'hash di Objects sul nomeUtente e cognome, i parametri si possono modificare e al momento li ho messi arbitrari
-    }*/
-
     //getters and setters
     public String getNome() {
         return nome;
@@ -122,10 +118,11 @@ public class Prodotto {
         this.categoria = categoria;
     }
 
+
+
     @Override
     public String toString() {
-        return "\tProdotto{" +
-                "\tnome='" + nome + '\'' +
+        return "\tnome='" + nome + '\'' +
                 ", \tcodice=" + codice +
                 ", \tdisponibilita=" + disponibilita +
                 ", \tprezzo=" + prezzo +

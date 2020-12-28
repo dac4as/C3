@@ -22,7 +22,7 @@ public abstract class  User {
     private int hashID;
 
     //un user a livello concettuale è composto da....:
-    public User(int hashID, String nomeUtente, String nome, String cognome, String recapito)
+    public User(String nomeUtente, String nome, String cognome, String recapito)
     {
         if(nomeUtente==null||nome==null||cognome==null) throw new NullPointerException();
         this.hashID=this.hashCode();

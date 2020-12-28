@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Cambio modulo test Junit -&gt; gradle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ListaProdotti.java" afterDir="false" />
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazzino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prodotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.IOFileTXTTest">
+  <component name="RunManager" selected="Gradle.MagazzinoTest">
     <configuration name="IOFileTXTTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -94,6 +94,48 @@
           </list>
         </option>
         <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IOFileTXTTest.writeList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;IOFileTXTTest.writeList&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MagazzinoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MagazzinoTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
@@ -123,7 +165,15 @@
     <list>
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="JUnit.IOFileTXTTest" />
+      <item itemvalue="Gradle.MagazzinoTest" />
+      <item itemvalue="Gradle.IOFileTXTTest.writeList" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MagazzinoTest" />
+        <item itemvalue="Gradle.IOFileTXTTest.writeList" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608649304628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;">
+      <created>1608656769938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608656769938</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +231,7 @@
     <MESSAGE value="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)" />
     <MESSAGE value="Sviluppo della classe commerciante e test" />
     <MESSAGE value="Cambio modulo test Junit -&gt; gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambio modulo test Junit -&gt; gradle" />
+    <MESSAGE value="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;" />
   </component>
 </project>

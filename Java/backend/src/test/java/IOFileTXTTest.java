@@ -28,9 +28,9 @@ class IOFileTXTTest {
 
 
         //nuovo metodo
-        Commerciante comm = new Commerciante(123, "dac4as", "Nick", "Donato", "5555");//un prodotto può essere senza categoria
+        Commerciante comm = new Commerciante( "dac4as", "Nick", "Donato", "5555");
         //Commerciante cattivo;
-        assertThrows(NullPointerException.class, ()->  new Commerciante(0, null, null, null, "666"));
+        assertThrows(NullPointerException.class, ()->  new Commerciante( null, null, null, "666"));
         Magazzino m = new Magazzino(magazzino, comm);
 
         assertTrue(m.addProdotto(prod1));
@@ -40,5 +40,6 @@ class IOFileTXTTest {
         write.writeList(filePath, m);
         System.out.println("Sto visualizzando il magazzino del negozio di " + m.getProprietario().getNome() +" "+ m.getProprietario().getCognome());
         System.out.println(m.getListaProdotti().toString());
+
     }
 }

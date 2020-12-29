@@ -6,12 +6,12 @@ import java.util.List;
 /**
  lista di Prodotti, getters and setters
  Il Magazzino è concepito per essere "personale" per ogni commerciante/negozio.
- In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni (penso statiche)
+ In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
  del commerciante a cui appartiene
  */
 public class Magazzino implements Comparable<Prodotto> {
 
-    private List<Prodotto> listaProdotti;//Prodotti dovrebbe essere un ArrayList
+    private ArrayList<Prodotto> listaProdotti;//Prodotti dovrebbe essere un ArrayList
     private Commerciante proprietario;
 
     public Magazzino(List<Prodotto> listaProdotti, Commerciante proprietario) {
@@ -28,7 +28,7 @@ public class Magazzino implements Comparable<Prodotto> {
                 "}\n";
     }
 
-    public List<Prodotto> getListaProdotti() {
+    public ArrayList<Prodotto> getListaProdotti() {
         return listaProdotti;
     }
 
@@ -50,6 +50,15 @@ public class Magazzino implements Comparable<Prodotto> {
         listaProdotti.set(indexP, tmp);
     }
 
+    /**
+     * try{
+     *      magazzino.addProdotto(prodotto);
+     *  }
+     * catch(IllegalArgumentException)
+     * {
+     *     richiama modificaProdotto();
+     * }
+    */
     public boolean addProdotto(Prodotto p) {
         if (listaProdotti.contains(p)) throw new IllegalArgumentException("Prodotto già presente nel magazzino.");
         return listaProdotti.add(p);
@@ -57,6 +66,12 @@ public class Magazzino implements Comparable<Prodotto> {
 
     public Commerciante getProprietario() {
         return this.proprietario;
+    }
+
+    //TODO creare altri 3 metodi per la ricerca per marca, per nome e per categoria (uno principale e tre secondari)(cit. Cardif)
+
+    public ArrayList<Prodotto> risultatoRicerca(String nome){
+        return new ArrayList<>();
     }
 
     @Override

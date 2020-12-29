@@ -1,5 +1,5 @@
 /**
- * - Può ricercare un prodotto e ricevere come risultato i negozi che lo vendono;
+ * - PuÃ² ricercare un prodotto e ricevere come risultato i negozi che lo vendono;
  * - Crea/Elimina/modifica ordine;
  * - Effettua pagamenti al Commerciante;
  * - Riceve alert:
@@ -8,5 +8,8 @@
  * - Eventuali problemi di spedizione/ordine
  * - Viene autenticato al momento della ricezione del pacco tramite il codice emesso dal venditore
  */
+
+package Users;
+
 public class Cliente {
 }

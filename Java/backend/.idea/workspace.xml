@@ -4,16 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" afterDir="false" />
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Implementazione metodi di Magazzino e il loro test su MagazzinoTest.java">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/test/Magazzino.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Visual Paradigm/.C3 - LNB.vpp.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_000f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_001d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazzino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prodotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Magazzino.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +80,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1lyPpPvBr8pJ7Z6t6rmxh1Mw4AM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -78,7 +104,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MagazzinoTest">
+  <component name="RunManager" selected="Gradle.IOFileTXTTest">
     <configuration name="IOFileTXTTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,9 +190,9 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.IOFileTXTTest" />
-      <item itemvalue="JUnit.IOFileTXTTest" />
       <item itemvalue="Gradle.MagazzinoTest" />
       <item itemvalue="Gradle.IOFileTXTTest.writeList" />
+      <item itemvalue="JUnit.IOFileTXTTest" />
     </list>
     <recent_temporary>
       <list>
@@ -212,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608656769938</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementazione metodi di Magazzino e il loro test su MagazzinoTest.java">
+      <created>1609172371614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609172371614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,10 +261,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)" />
     <MESSAGE value="Sviluppo della classe commerciante e test" />
     <MESSAGE value="Cambio modulo test Junit -&gt; gradle" />
     <MESSAGE value="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="sviluppo di Magazzino.java&#10;&#10;//TODO ridefinire Arraylist&lt;Prodotto&gt;" />
+    <MESSAGE value="Implementazione metodi di Magazzino e il loro test su MagazzinoTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementazione metodi di Magazzino e il loro test su MagazzinoTest.java" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-	Prodotto{	nome='Palla', 	codice=327f4fada0b9a8cd91427d9bd77d1e3b, 	disponibilita=10, 	prezzo=5.0, 	descrizione='Oggetto sferico che rimbalza', 	categoria=Sport}
+	nome='Palla', 	codice=327f4fada0b9a8cd91427d9bd77d1e3b, 	disponibilita=10, 	prezzo=5.0, 	descrizione='Oggetto sferico che rimbalza', 	categoria=Sport}
 
-	Prodotto{	nome='Drone', 	codice=56914d668aa38492e2d8dde0fe25e24d, 	disponibilita=8, 	prezzo=70.99, 	descrizione='Coso che vola', 	categoria=Elettronica}
+	nome='Drone', 	codice=56914d668aa38492e2d8dde0fe25e24d, 	disponibilita=8, 	prezzo=70.99, 	descrizione='Coso che vola', 	categoria=Elettronica}
 

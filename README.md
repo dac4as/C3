@@ -247,6 +247,7 @@ Casi d'uso principali:
 - Vizualizza ordini assegnati (tipologia pacco, destinazione)
 - Assegnazione ordini (assegna un ordine basandosi sulla vicinanza di un corriere)
 - Definisce punto di ritiro merce
+- Ricerca prodotto
 
 Sviluppati:
 
@@ -262,7 +263,21 @@ Sviluppati:
 
 *************************************************************************************************************************************************
 
-Nono colloquio:
+Nono e decimo colloquio:
 - 
-Inizio Implementazione prime classi
+Inizio Implementazione prime classi in java
 
+Adattamento/modifica casi d'uso in VP:
+
+- Aggiunta prodotti da vendere
+
+Casi d'uso implementati in java:
+
+- Aggiunta prodotti da vendere
+
+Aggiunta caso d'uso in VP:
+
+- Aggiunta prodotto INCLUDE modifica prodotto
+
+
+*************************************************************************************************************************************************

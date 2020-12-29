@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IOFileTXTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-29T17:06:52" hostname="HOME-GAMING" time="0.041">
+  <properties/>
+  <testcase name="writeList()" classname="IOFileTXTTest" time="0.041"/>
+  <system-out><![CDATA[Sto visualizzando il magazzino del negozio di Nick Donato
+[	nome='Palla', 	codice=327f4fada0b9a8cd91427d9bd77d1e3b, 	disponibilita=10, 	prezzo=5.0, 	descrizione='Oggetto sferico che rimbalza', 	categoria=Sport}
+, 	nome='Drone', 	codice=56914d668aa38492e2d8dde0fe25e24d, 	disponibilita=8, 	prezzo=70.99, 	descrizione='Coso che vola', 	categoria=Elettronica}
+]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -50,7 +50,7 @@ public class Magazzino implements Comparable<Prodotto> {
         listaProdotti.set(indexP, tmp);
     }
 
-    /**
+    /**in main:
      * try{
      *      magazzino.addProdotto(prodotto);
      *  }
@@ -68,11 +68,6 @@ public class Magazzino implements Comparable<Prodotto> {
         return this.proprietario;
     }
 
-    //TODO creare altri 3 metodi per la ricerca per marca, per nome e per categoria (uno principale e tre secondari)(cit. Cardif)
-
-    public ArrayList<Prodotto> risultatoRicerca(String nome){
-        return new ArrayList<>();
-    }
 
     @Override
     public int compareTo(Prodotto o) {//viene/gono comparato/i il/i seguente/i parametro/i (di Prodotto): codice

@@ -28,9 +28,9 @@ class IOFileTXTTest {
 
 
         //nuovo metodo
-        Commerciante comm = new Commerciante( "dac4as", "Nick", "Donato", "5555");
+        Commerciante comm = new Commerciante( "dac4as", "Nick", "Donato", "5555", "Paradiso della Brugola");
         //Commerciante cattivo;
-        assertThrows(NullPointerException.class, ()->  new Commerciante( null, null, null, "666"));
+        assertThrows(NullPointerException.class, ()->  new Commerciante( null, null, null, "666", null));
         Magazzino m = new Magazzino(magazzino, comm);
 
         assertTrue(m.addProdotto(prod1));
@@ -41,5 +41,12 @@ class IOFileTXTTest {
         System.out.println("Sto visualizzando il magazzino del negozio di " + m.getProprietario().getNome() +" "+ m.getProprietario().getCognome());
         System.out.println(m.getListaProdotti().toString());
 
+    }
+
+    @Test
+    void readList() throws IOException{
+        String filePath = "src/test/resources/Magazzino.txt";
+        IOFileTXT read = new IOFileTXT();
+        read.readList(filePath);
     }
 }

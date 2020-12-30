@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface SystemIO {
 
-    List<Prodotto> readList(String path);
+    Object readList(String path) throws IOException;
 
     void writeList(String path, Magazzino list) throws IOException;
 

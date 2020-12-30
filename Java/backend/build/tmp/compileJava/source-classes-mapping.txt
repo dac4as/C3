@@ -1,5 +1,13 @@
 ListaProdotti.java
  ListaProdotti
+Magazzino.java
+ Magazzino
+Prodotto.java
+ Prodotto
+Users/Commerciante.java
+ Users.Commerciante
+Users/User.java
+ Users.User
 Categoria.java
  Categoria
  Categoria$1
@@ -7,17 +15,11 @@ Categoria.java
  Categoria$3
  Categoria$4
  Categoria$5
-Users/User.java
- Users.User
-Users/Commerciante.java
- Users.Commerciante
-Magazzino.java
- Magazzino
-IOFileTXT.java
- IOFileTXT
-Prodotto.java
- Prodotto
 Users/Cliente.java
  Users.Cliente
+IOFileTXT.java
+ IOFileTXT
+GestoreMagazzino.java
+ GestoreMagazzino
 SystemIO.java
  SystemIO

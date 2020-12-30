@@ -11,5 +11,10 @@
 
 package Users;
 
-public class Cliente {
+public class Cliente extends User{
+
+    public Cliente(String nomeUtente, String nome, String cognome, String recapito) {
+        super(nomeUtente, nome, cognome, recapito);
+    }
+
 }

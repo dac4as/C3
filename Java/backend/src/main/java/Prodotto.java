@@ -118,7 +118,9 @@ public class Prodotto {
         this.categoria = categoria;
     }
 
-
+    public String toFile(){
+        return nome+';'+codice+';'+disponibilita+';'+prezzo+';'+descrizione+';'+categoria+";\n";
+    }
 
     @Override
     public String toString() {

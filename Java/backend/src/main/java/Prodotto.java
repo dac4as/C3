@@ -22,13 +22,14 @@ public class Prodotto {
 
     private Categoria categoria;
 
-//TODO add marca
+    //TODO add marca
     public Prodotto(String nome, String marca, int disponibilita, float prezzo, String descrizione, Categoria categoria) {
-        if(nome==null||descrizione==null||categoria==null) throw new NullPointerException();
-        if(disponibilita<=0||prezzo<=0) throw new IllegalArgumentException("Non è possibile inserire valori non accettati");
-        this.codice = this.setCodice(nome,marca,categoria);
+        if (nome == null || descrizione == null || categoria == null) throw new NullPointerException();
+        if (disponibilita <= 0 || prezzo <= 0)
+            throw new IllegalArgumentException("Non è possibile inserire valori non accettati");
+        this.codice = this.setCodice(nome, marca, categoria);
         this.nome = nome;
-        this.marca=marca;
+        this.marca = marca;
         this.disponibilita = disponibilita;
         this.prezzo = prezzo;
         this.descrizione = descrizione;
@@ -49,9 +50,8 @@ public class Prodotto {
         return codice;
     }
 
-    private String setCodice(String nome, String marca, Categoria categoria)
-    {
-        String toReturn=categoria.toString()+nome+marca;
+    private String setCodice(String nome, String marca, Categoria categoria) {
+        String toReturn = categoria.toString() + nome + marca;
         try {
 
             // Static getInstance method is called with hashing MD5
@@ -82,8 +82,8 @@ public class Prodotto {
         return marca;
     }
 
-    public void setMarca(String marca){
-        this.marca=marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public int getDisponibilita() {
@@ -118,8 +118,8 @@ public class Prodotto {
         this.categoria = categoria;
     }
 
-    public String toFile(){
-        return nome+';'+codice+';'+disponibilita+';'+prezzo+';'+descrizione+';'+categoria+";\n";
+    public String toFile() {
+        return nome + ';' + codice + ';' + disponibilita + ';' + prezzo + ';' + descrizione + ';' + categoria + ";\n";
     }
 
     @Override

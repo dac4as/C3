@@ -1,31 +1,31 @@
 public enum Categoria {
     //tutte le categorie di prodotto
 
-    Elettronica{
+    Elettronica {
         @Override
         public String toString() {
             return "Elettronica";
         }
     },
-    Alimentare{
+    Alimentare {
         @Override
         public String toString() {
             return "Alimentare";
         }
     },
-    Moda{
+    Moda {
         @Override
         public String toString() {
             return "Moda";
         }
     },
-    Bricolage{
+    Bricolage {
         @Override
         public String toString() {
             return "Bricolage";
         }
     },
-    Sport{
+    Sport {
         @Override
         public String toString() {
             return "Sport";

@@ -1,13 +1,14 @@
 import Users.Commerciante;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- lista di Prodotti, getters and setters
- Il Magazzino è concepito per essere "personale" per ogni commerciante/negozio.
- In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
- del commerciante a cui appartiene
+ * lista di Prodotti, getters and setters
+ * Il Magazzino è concepito per essere "personale" per ogni commerciante/negozio.
+ * In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
+ * del commerciante a cui appartiene
  */
 public class Magazzino implements Comparable<Prodotto> {
 
@@ -50,15 +51,16 @@ public class Magazzino implements Comparable<Prodotto> {
         listaProdotti.set(indexP, tmp);
     }
 
-    /**in main:
+    /**
+     * in main:
      * try{
-     *      magazzino.addProdotto(prodotto);
-     *  }
+     * magazzino.addProdotto(prodotto);
+     * }
      * catch(IllegalArgumentException)
      * {
-     *     richiama modificaProdotto();
+     * richiama modificaProdotto();
      * }
-    */
+     */
     public boolean addProdotto(Prodotto p) {
         if (listaProdotti.contains(p)) throw new IllegalArgumentException("Prodotto già presente nel magazzino.");
         return listaProdotti.add(p);

@@ -16,14 +16,14 @@ public class Prodotto {
 
     private int disponibilita;
 
-    private float prezzo;
+    private double prezzo;
 
     private String descrizione;
 
     private Categoria categoria;
 
     //TODO add marca
-    public Prodotto(String nome, String marca, int disponibilita, float prezzo, String descrizione, Categoria categoria) {
+    public Prodotto(String nome, String marca, int disponibilita, double prezzo, String descrizione, Categoria categoria) {
         if (nome == null || descrizione == null || categoria == null) throw new NullPointerException();
         if (disponibilita <= 0 || prezzo <= 0)
             throw new IllegalArgumentException("Non è possibile inserire valori non accettati");
@@ -94,7 +94,7 @@ public class Prodotto {
         this.disponibilita = disponibilita;
     }
 
-    public float getPrezzo() {
+    public double getPrezzo() {
         return prezzo;
     }
 

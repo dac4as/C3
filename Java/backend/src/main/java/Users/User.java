@@ -2,45 +2,40 @@ package Users;
 
 import java.util.Objects;
 
-/**Classe astratta (non istanziabile) che contiene tutte le informazioni che un utente registrato deve avere per poter utilizzare la piattaforma
+/**
+ * Classe astratta (non istanziabile) che contiene tutte le informazioni che un utente registrato deve avere per poter utilizzare la piattaforma
  * in modo corretto
- *
- *  nomeUtente
- *  password
- *  email, forse o qualcosa del genere
- *  recapito ---->il num di telefono sarà String
+ * <p>
+ * nomeUtente
+ * password
+ * email, forse o qualcosa del genere
+ * recapito ---->il num di telefono sarà String
  * etc.
- *
- *
  */
-public abstract class  User {
-    private String nomeUtente;
+public abstract class User {
+    //private String nomeUtente;
     private String nome;
     private String cognome;
-    //private String email;
+    private final String email;
     private String recapito;
-    private int hashID;
+    private final int hashID;
 
     //un user a livello concettuale è composto da....:
-    public User(String nomeUtente, String nome, String cognome, String recapito)
-    {
-        if(nomeUtente==null||nome==null||cognome==null) throw new NullPointerException();
-        this.hashID=this.hashCode();
-        this.nomeUtente=nomeUtente;
-        this.nome=nome;
-        this.cognome=cognome;
-        this.recapito=recapito;
+    public User(String email, String nome, String cognome, String recapito) {
+        if (email == null || nome == null || cognome == null || recapito == null) throw new NullPointerException();
+        this.hashID = this.hashCode();
+        this.email = email;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.recapito = recapito;
         //più tutti gli altri parametri specifici per tipologia di utente
     }
 
-
-    public int hashCode(){
-        return Objects.hash(nomeUtente,cognome);//identificativo basato sull'hash di Objects sul nomeUtente e cognome, i parametri si possono modificare e al momento li ho messi arbitrari
-    }
-
-
-    public void setNomeUtente(String nomeUtente) {
-        this.nomeUtente = nomeUtente;
+    /**
+     * @return hashcode made by email and cognome of a user.
+     */
+    public int hashCode() {
+        return Objects.hash(email, cognome);
     }
 
     public String getNome() {
@@ -63,4 +58,11 @@ public abstract class  User {
         this.recapito = recapito;
     }
 
+    public String getRecapito() {
+        return recapito;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }

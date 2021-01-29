@@ -10,6 +10,7 @@ class IOFileTXTTest {
 
     @Test
     void writeList() throws IOException {
+        /*
         IOFileTXT write = new IOFileTXT();
         String filePath = "src/test/resources/Magazzino.txt";
         //String filePath="resources/Magazzino.txt";
@@ -40,6 +41,8 @@ class IOFileTXTTest {
         write.writeList(filePath, m);
         System.out.println("Sto visualizzando il magazzino del negozio di " + m.getProprietario().getNome() +" "+ m.getProprietario().getCognome());
         System.out.println(m.getListaProdotti().toString());
+
+         */
 
     }
 

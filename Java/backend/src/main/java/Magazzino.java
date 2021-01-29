@@ -3,22 +3,24 @@ import Users.Commerciante;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * lista di Prodotti, getters and setters
  * Il Magazzino è concepito per essere "personale" per ogni commerciante/negozio.
  * In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
  * del commerciante a cui appartiene
  */
-public class Magazzino implements Comparable<Prodotto> {
+public class Magazzino extends Attivita implements Comparable<Prodotto> {
 
     private ArrayList<Prodotto> listaProdotti;//Prodotti dovrebbe essere un ArrayList
-    private Commerciante proprietario;
 
-    public Magazzino(List<Prodotto> listaProdotti, Commerciante proprietario) {
-        if (listaProdotti == null || proprietario == null) throw new NullPointerException();
+    public Magazzino(String nome, String indirizzo, List<Prodotto> listaProdotti, Commerciante commerciante) {
+        /**
+         * @param nome nome attività
+         * @param indirizzo indirizzo attività
+         */
+        super(nome, indirizzo, commerciante);
+        if (listaProdotti == null) throw new NullPointerException();
         this.listaProdotti = new ArrayList<>(listaProdotti);
-        this.proprietario = proprietario;
     }
 
     @Override
@@ -64,10 +66,6 @@ public class Magazzino implements Comparable<Prodotto> {
     public boolean addProdotto(Prodotto p) {
         if (listaProdotti.contains(p)) throw new IllegalArgumentException("Prodotto già presente nel magazzino.");
         return listaProdotti.add(p);
-    }
-
-    public Commerciante getProprietario() {
-        return this.proprietario;
     }
 
 

@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Attivita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prodotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazzino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_000f" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_000f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/Pizzeria4.0.vpp.bak_000f" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/dac4as/C3" />
+      </set>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
       <option value="15" />
@@ -69,12 +82,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -88,6 +104,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.IOFileTXTTest.writeList">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IOFileTXTTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,6 +242,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608566539679</updated>
+      <workItem from="1611934435624" duration="2656000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>
@@ -261,6 +289,9 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -282,5 +313,9 @@
     <MESSAGE value="Implementazione metodi di Magazzino e il loro test su MagazzinoTest.java" />
     <MESSAGE value="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java" />
     <option name="LAST_COMMIT_MESSAGE" value="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

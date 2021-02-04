@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Attivita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazzino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/Commerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagazzinoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_000f" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB.vpp.bak_000f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/Pizzeria4.0.vpp.bak_000f" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -103,18 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.IOFileTXTTest.writeList">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="IOFileTXTTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,15 +201,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="Gradle.MagazzinoTest" />
       <item itemvalue="Gradle.IOFileTXTTest.writeList" />
       <item itemvalue="Gradle.MagazzinoTest.increaseQuantity" />
+      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.IOFileTXTTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Gradle.IOFileTXTTest.writeList" />
         <item itemvalue="Gradle.MagazzinoTest.increaseQuantity" />
         <item itemvalue="Gradle.MagazzinoTest" />
@@ -243,6 +234,9 @@
       <option name="presentableId" value="Default" />
       <updated>1608566539679</updated>
       <workItem from="1611934435624" duration="2656000" />
+      <workItem from="1612459756833" duration="1390000" />
+      <workItem from="1612461170932" duration="2199000" />
+      <workItem from="1612463641119" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

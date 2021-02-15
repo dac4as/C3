@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
       <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp.bak_000f" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp.bak_000f" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Java Scratch.Scratch">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IOFileTXTTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -240,6 +252,7 @@
       <workItem from="1612796210958" duration="2927000" />
       <workItem from="1612885789350" duration="2399000" />
       <workItem from="1612971857906" duration="704000" />
+      <workItem from="1613406857538" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

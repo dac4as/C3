@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IOFileTXTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-25T15:38:20" hostname="PC-CARDIF" time="0.028">
+<testsuite name="IOFileTXTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-17T23:40:08" hostname="PC-CARDIF" time="0.021">
   <properties/>
-  <testcase name="writeList()" classname="IOFileTXTTest" time="0.028"/>
-  <system-out><![CDATA[Sto visualizzando il magazzino del negozio di Nick Donato
-[	nome='Palla', 	codice=327f4fada0b9a8cd91427d9bd77d1e3b, 	disponibilita=10, 	prezzo=5.0, 	descrizione='Oggetto sferico che rimbalza', 	categoria=Sport}
-, 	nome='Drone', 	codice=56914d668aa38492e2d8dde0fe25e24d, 	disponibilita=8, 	prezzo=70.99, 	descrizione='Coso che vola', 	categoria=Elettronica}
-]
+  <testcase name="testreadProdotto()" classname="IOFileTXTTest" time="0.021"/>
+  <system-out><![CDATA[Elettronica: 
+[Empty]
+
+Alimentare: 
+[Empty]
+
+Sport: 
+[Empty]
+
+Bricolage: 
+[Empty]
+
+Abbigliamento: 
+[Empty]
+
+Cancelleria: 
+[Empty]
+
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

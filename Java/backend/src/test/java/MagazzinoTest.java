@@ -1,21 +1,17 @@
-import Users.Commerciante;
+import Amuber.Enums.Categoria;
+import Amuber.Prodotto;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 class MagazzinoTest {
     @Test
     void addProdotto() {
         /*
-        Prodotto prod1 = new Prodotto("Palla", "Adidas", 10, 5, "Oggetto sferico che rimbalza", Categoria.Sport);
-        Prodotto prod2 = new Prodotto("Drone", "DJY", 8, 70.99f, "Coso che vola", Categoria.Elettronica);
-        ArrayList<Prodotto> listaP = new ArrayList<>();
+        Amuber.Prodotto prod1 = new Amuber.Prodotto("Palla", "Adidas", 10, 5, "Oggetto sferico che rimbalza", Amuber.Enums.Categoria.Sport);
+        Amuber.Prodotto prod2 = new Amuber.Prodotto("Drone", "DJY", 8, 70.99f, "Coso che vola", Amuber.Enums.Categoria.Elettronica);
+        ArrayList<Amuber.Prodotto> listaP = new ArrayList<>();
 
         Commerciante comm = new Commerciante( "dac4as", "Nick", "Donato", "5555", "Paradiso della Brugola");
-        Magazzino m = new Magazzino(listaP, comm);
+        Amuber.Magazzino m = new Amuber.Magazzino(listaP, comm);
 
         assertTrue(m.addProdotto(prod1));
         assertTrue(m.addProdotto(prod2));

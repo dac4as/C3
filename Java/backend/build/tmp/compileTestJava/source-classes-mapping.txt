@@ -1,4 +1,8 @@
+CommercianteTest.java
+ CommercianteTest
 MagazzinoTest.java
  MagazzinoTest
+CarrelloTest.java
+ CarrelloTest
 IOFileTXTTest.java
  IOFileTXTTest

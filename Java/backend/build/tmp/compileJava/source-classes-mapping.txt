@@ -1,25 +1,30 @@
-ListaProdotti.java
- ListaProdotti
-Magazzino.java
- Magazzino
-IOFileTXT.java
- IOFileTXT
-Users/Commerciante.java
- Users.Commerciante
-Users/User.java
- Users.User
-Categoria.java
- Categoria
- Categoria$1
- Categoria$2
- Categoria$3
- Categoria$4
- Categoria$5
-GestoreMagazzino.java
- GestoreMagazzino
-Prodotto.java
- Prodotto
-Users/Cliente.java
- Users.Cliente
-SystemIO.java
- SystemIO
+Amuber/Interfacce/ICommerciante.java
+ Amuber.Interfacce.ICommerciante
+Amuber/Attivita.java
+ Amuber.Attivita
+Amuber/ListaProdotti.java
+ Amuber.ListaProdotti
+Amuber/Users/Commerciante.java
+ Amuber.Users.Commerciante
+Amuber/Users/User.java
+ Amuber.Users.User
+Amuber/Users/Cliente.java
+ Amuber.Users.Cliente
+Amuber/Enums/Zona.java
+ Amuber.Enums.Zona
+Amuber/Enums/Categoria.java
+ Amuber.Enums.Categoria
+Amuber/Enums/Veicolo.java
+ Amuber.Enums.Veicolo
+Main.java
+ Main
+Amuber/Magazzino.java
+ Amuber.Magazzino
+Amuber/Prodotto.java
+ Amuber.Prodotto
+Amuber/IOFileTXT.java
+ Amuber.IOFileTXT
+Amuber/Carrello.java
+ Amuber.Carrello
+Amuber/SystemIO.java
+ Amuber.SystemIO

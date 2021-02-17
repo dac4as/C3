@@ -1,55 +1,112 @@
-import Users.Commerciante;
+import Amuber.Enums.Categoria;
+import Amuber.Magazzino;
+import Amuber.Prodotto;
+import Amuber.Users.Commerciante;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 class IOFileTXTTest {
 
     @Test
-    void writeList() throws IOException {
-        /*
-        IOFileTXT write = new IOFileTXT();
-        String filePath = "src/test/resources/Magazzino.txt";
-        //String filePath="resources/Magazzino.txt";
-        Prodotto prod1 = new Prodotto("Palla", "Adidas", 10, 5, "Oggetto sferico che rimbalza", Categoria.Sport);
-        Prodotto prod2 = new Prodotto( "Drone", "DJY", 8, 70.99f, "Coso che vola", Categoria.Elettronica);
-        assertThrows(NullPointerException.class, () -> new Prodotto("NullPointer","Java", 0, 0.0f, "Coso che (non) crasha", null));
-        assertThrows(NullPointerException.class,() -> new Prodotto("Carte", "Konami", 3, 500.99f, "Carte da gioco", null));
+    void testwriteProdotto() throws IOException {
 
+        //preparo magazzino
+        HashMap<Categoria, Set<Prodotto>> listaProdotti = new HashMap<>();
 
-        //modificata la lista di prodotti in Magazzino (vecchio metodo)
-        List<Prodotto> magazzino = new ArrayList<>();
-        //magazzino.add(prod1);
-        //magazzino.add(prod2);
-        //write.writeList(filePath, magazzino);deprecated
-        //System.out.println(magazzino.toString());
+        //aggiungo categorie alla mappa
+        for (Categoria categoria : EnumSet.allOf(Categoria.class)) {
+            listaProdotti.put(categoria, new HashSet<>());
+        }
 
+        //creo commerciante e magazzino affiliato
+        Commerciante comm1 = new Commerciante("mario.rossi@gmail.com", "Mario", "Rossi", "3225552431");
+        Magazzino mag1 = new Magazzino("Pencil Hub", comm1, "Via San Mario 34");
 
-        //nuovo metodo
-        Commerciante comm = new Commerciante( "dac4as", "Nick", "Donato", "5555", "Paradiso della Brugola");
-        //Commerciante cattivo;
-        assertThrows(NullPointerException.class, ()->  new Commerciante( null, null, null, "666", null));
-        Magazzino m = new Magazzino(magazzino, comm);
+        //creo prodotti e li carico nella mappa
+        Prodotto pro1 = new Prodotto("Matita", "Staedtler", 10, 2.50, "Matita HB per disegno", Categoria.Cancelleria);
+        Prodotto pro2 = new Prodotto("Colla", "Print", 12, 5.99, "Colla comune", Categoria.Cancelleria);
+        Prodotto pro3 = new Prodotto("TOP Shirt", "Cottonwave", 5, 10.99, "Maglia con logo ufficiale Twenty One Pilots", Categoria.Abbigliamento);
+        Prodotto pro4 = new Prodotto("Mouse Rival 600", "Steelseries", 8, 78.56, "Mouse da gaming", Categoria.Elettronica);
+        Prodotto pro5 = new Prodotto("Pollo a fette", "Feleni", 27, 4.32, "Petto di pollo tagliato a fette sottili", Categoria.Alimentare);
+        listaProdotti.get(pro1.getCategoria()).add(pro1);
+        listaProdotti.get(pro2.getCategoria()).add(pro2);
+        listaProdotti.get(pro3.getCategoria()).add(pro3);
+        listaProdotti.get(pro4.getCategoria()).add(pro4);
+        listaProdotti.get(pro5.getCategoria()).add(pro5);
 
-        assertTrue(m.addProdotto(prod1));
-        assertTrue(m.addProdotto(prod2));
+        //creo sub-path
+        String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + comm1.getHashID() + "/" + mag1.getHashID();
 
-        //assertTrue(m.addProdotto(prod4));
-        write.writeList(filePath, m);
-        System.out.println("Sto visualizzando il magazzino del negozio di " + m.getProprietario().getNome() +" "+ m.getProprietario().getCognome());
-        System.out.println(m.getListaProdotti().toString());
+        //salvo i prodotti nel magazzino ciclando le categorie della mappa
+        for (Categoria cat : listaProdotti.keySet()) {
+            //entro nel path della categoria
+            try {
+                File file = new File(pathMagazzino + "/" + cat + "/prodotti.txt");
 
-         */
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, false));
 
+                //inserisco tutti i prodotti appartenenti a quella categoria
+                for (Prodotto prodotto : listaProdotti.get(cat)) {
+                    bufferedWriter.append(prodotto.toFile());
+                }
+                //chiudo il file
+                bufferedWriter.close();
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found");
+            } catch (IOException e) {
+                System.out.println("Error initializing stream");
+            }
+        }
     }
 
     @Test
-    void readList() throws IOException{
-        String filePath = "src/test/resources/Magazzino.txt";
-        IOFileTXT read = new IOFileTXT();
-        read.readList(filePath);
+    void testreadProdotto() throws IOException {
+        //creo commerciante e magazzino affiliato
+        Commerciante comm1 = new Commerciante("mario.rossi@gmail.com", "Mario", "Rossi", "3225552431");
+        Magazzino mag1 = new Magazzino("Pencil Hub", comm1, "Via San Mario 34");
+
+        //creo sub-path
+        String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + comm1.getHashID() + "/" + mag1.getHashID();
+
+        //preparo magazzino
+        HashMap<Categoria, Set<Prodotto>> listaProdotti = new HashMap<>();
+
+        //leggo i prodotti dal magazzino ciclando le categorie della mappa
+        for (Categoria categoria : EnumSet.allOf(Categoria.class)) {
+            //creo mappa
+            listaProdotti.put(categoria, new HashSet<>());
+            try {
+                //inizializzo scanner
+                Scanner scanner = new Scanner(new File(pathMagazzino + "/" + categoria + "/prodotti.txt"));
+
+                //fino a quanto lo scanner ha una riga da leggere
+                while (scanner.hasNextLine()) {
+                    //leggo una riga e la "splitto" usando il carattere ";"
+                    String tokens[] = scanner.nextLine().split(";");
+
+                    //aggiungo il prodotto nella mappa
+                    listaProdotti.get(categoria).add(new Prodotto(tokens[1], tokens[2], Integer.parseInt(tokens[3]), Double.parseDouble(tokens[4]), tokens[5], categoria));
+                }
+                //chiudo scanner
+                scanner.close();
+            } catch (FileNotFoundException e) {
+                System.out.println("Commerciante / Magazzino errati");
+                break;
+            }
+        }
+
+        //stampo mappa
+        for (Categoria cat : listaProdotti.keySet()) {
+            System.out.println(cat + ": ");
+            if (listaProdotti.get(cat).isEmpty()) System.out.println("[Empty]");
+            else
+                for (Prodotto pro : listaProdotti.get(cat)) {
+                    System.out.print(pro);
+                }
+
+            System.out.println();
+        }
     }
 }

@@ -3,10 +3,14 @@ package Amuber;
 import Amuber.Enums.Categoria;
 import Amuber.Users.Commerciante;
 
+import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -16,7 +20,7 @@ import java.util.Set;
  * In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
  * del commerciante a cui appartiene
  */
-public class Magazzino{
+public class Magazzino {
 
     /**
      * HashMap<K,V>
@@ -38,6 +42,21 @@ public class Magazzino{
         this.indirizzo = indirizzo;
         this.hashID = this.setCodice();
         this.listaProdotti = new HashMap<>();
+
+        String path = "src/test/Amuber/Users/Commerciante/" + proprietario.getHashID() + "/" + this.hashID;
+        File directory = new File(path);
+        if (!directory.exists()) {
+            try {
+                Files.createDirectories(Paths.get(path));
+                for (Categoria categoria : EnumSet.allOf(Categoria.class)) {
+                    Files.createDirectories(Paths.get(path + "/" + categoria));
+                    Files.createFile(Paths.get(path + "/" + categoria + "/prodotti.txt"));
+                }
+                System.out.println("Directory are created!");
+            } catch (IOException e) {
+                System.err.println("Failed to create directory!" + e.getMessage());
+            }
+        } else System.out.println("Directory exist");
     }
 
     public String getHashID() {
@@ -95,17 +114,27 @@ public class Magazzino{
      * }
      */
 
-    public void aggiuntaProdotto(Prodotto p) throws IOException {
+    public boolean aggiuntaProdotto(Prodotto p) throws IOException {
         getListaProdotti(p.getCategoria());
-        if(prodotti.contains(p))
-            increaseQuantity(p);
-        else
-            prodotti.add(p);
+
+        boolean modifica = false;
+
+        for (Prodotto tmp : prodotti) {
+            if (tmp.compareTo(p) == 0) {
+                increaseQuantity(p);
+                modifica = true;
+            }
+        }
+
+        if (!modifica) prodotti.add(p);
+
         interacter.updaterByCategoria(prodotti, this, p.getCategoria());
+
+        return modifica;
     }
 
     public void getListaProdotti(Categoria c) {
-        prodotti = interacter.readProdottiByCategoria(c,this);
+        prodotti = interacter.readProdottiByCategoria(c, this);
     }
 
     @Override
@@ -118,9 +147,8 @@ public class Magazzino{
 
 
     public void increaseQuantity(Prodotto p) {
-        for(Prodotto tmp : prodotti)
-        {
-            if(tmp.compareTo(p)==0) {
+        for (Prodotto tmp : prodotti) {
+            if (tmp.compareTo(p) == 0) {
                 tmp.setDisponibilita(tmp.getDisponibilita() + p.getDisponibilita());
                 return;
             }

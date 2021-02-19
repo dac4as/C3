@@ -13,7 +13,7 @@ public class IOFileTXT {
 
         String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + commerciante.getHashID() + "/" + magazzino.getHashID();
 
-        for(Categoria categoria: EnumSet.allOf(Categoria.class)) {
+        for (Categoria categoria : EnumSet.allOf(Categoria.class)) {
             //File file = new File(pathMagazzino + categoria);
             System.out.println(pathMagazzino + categoria);
         }
@@ -21,12 +21,11 @@ public class IOFileTXT {
         return null;
     }
 
-    public Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag)
-    {
+    public Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag) {
         Set<Prodotto> setProdotti = new HashSet<>();
         try {
             //inizializzo scanner
-            Scanner scanner = new Scanner(new File("src/test/Amuber/Users/Commerciante/" + mag.getProprietario().getHashID() + "/" + mag.getHashID() + "/"+ c +"/prodotti.txt"));
+            Scanner scanner = new Scanner(new File("src/test/Amuber/Users/Commerciante/" + mag.getProprietario().getHashID() + "/" + mag.getHashID() + "/" + c + "/prodotti.txt"));
 
             //fino a quanto lo scanner ha una riga da leggere
             while (scanner.hasNextLine()) {
@@ -47,9 +46,10 @@ public class IOFileTXT {
 
     /**
      * Salva un set di prodotti di uguale categoria nel magazzino opportuno
+     *
      * @param setP set di prodotti di stessa categoria
-     * @param m magazzino al quale va aggiunto
-     * @param c categoria del set
+     * @param m    magazzino al quale va aggiunto
+     * @param c    categoria del set
      * @throws IOException
      */
     public void updaterByCategoria(Set<Prodotto> setP, Magazzino m, Categoria c) throws IOException {

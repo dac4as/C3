@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IOFileTXTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-17T23:40:08" hostname="PC-CARDIF" time="0.021">
+<testsuite name="IOFileTXTTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-19T16:19:13" hostname="HOME-GAMING" time="0.061">
   <properties/>
-  <testcase name="testreadProdotto()" classname="IOFileTXTTest" time="0.021"/>
-  <system-out><![CDATA[Elettronica: 
+  <testcase name="testwriteProdotto()" classname="IOFileTXTTest" time="0.041"/>
+  <testcase name="testreadProdotto()" classname="IOFileTXTTest" time="0.019"/>
+  <system-out><![CDATA[Bricolage: 
 [Empty]
 
 Alimentare: 
-[Empty]
+{nome=Pollo a fette, codice=80b051507fc233d5e8d2713e9701dae3, disponibilita=27, prezzo=4.32, descrizione=Petto di pollo tagliato a fette sottili, categoria=Alimentare}
 
 Sport: 
 [Empty]
 
-Bricolage: 
-[Empty]
+Cancelleria: 
+{nome=Colla, codice=70ba089c648ae8ed7dd5ea8ca1b596c5, disponibilita=12, prezzo=5.99, descrizione=Colla comune, categoria=Cancelleria}
+{nome=Matita, codice=08b97a02464d6c130920a899a160b630, disponibilita=10, prezzo=2.5, descrizione=Matita HB per disegno, categoria=Cancelleria}
+
+Elettronica: 
+{nome=Mouse Rival 600, codice=e34963e547e91c8a32be826e77f956e7, disponibilita=8, prezzo=78.56, descrizione=Mouse da gaming, categoria=Elettronica}
 
 Abbigliamento: 
-[Empty]
-
-Cancelleria: 
-[Empty]
+{nome=TOP Shirt, codice=51c42afdb94520b5f13374253a714cd2, disponibilita=5, prezzo=10.99, descrizione=Maglia con logo ufficiale Twenty One Pilots, categoria=Abbigliamento}
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

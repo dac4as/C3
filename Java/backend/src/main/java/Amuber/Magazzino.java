@@ -3,6 +3,7 @@ package Amuber;
 import Amuber.Enums.Categoria;
 import Amuber.Users.Commerciante;
 
+import java.io.IOException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -15,19 +16,21 @@ import java.util.Set;
  * In pratica è un OGGETTO che oltre a contenere la lista dei prodotti messi in vendita, conterrà le informazioni
  * del commerciante a cui appartiene
  */
-public class Magazzino implements Comparable<Prodotto> {
+public class Magazzino{
 
     /**
      * HashMap<K,V>
      * K -> Amuber.Enums.Categoria
      * V -> Set<Amuber.Prodotto> = new HashSet<>()
      **/
-    private HashMap<Categoria, Set<Prodotto>> listaProdotti;
+    private HashMap<Categoria, Set<Prodotto>> listaProdotti;//è una mappa
+    private Set<Prodotto> prodotti; //(hashset)
 
     public String nome;
     public String indirizzo;
     public Commerciante proprietario;
     private final String hashID;
+    private final IOFileTXT interacter = new IOFileTXT();
 
     public Magazzino(String nome, Commerciante commerciante, String indirizzo) {
         this.nome = nome;
@@ -35,6 +38,10 @@ public class Magazzino implements Comparable<Prodotto> {
         this.indirizzo = indirizzo;
         this.hashID = this.setCodice();
         this.listaProdotti = new HashMap<>();
+    }
+
+    public String getHashID() {
+        return hashID;
     }
 
     public String setCodice() {
@@ -65,10 +72,6 @@ public class Magazzino implements Comparable<Prodotto> {
         }
     }
 
-    public String getHashID() {
-        return hashID;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -81,46 +84,6 @@ public class Magazzino implements Comparable<Prodotto> {
         return proprietario;
     }
 
-    public void getListaProdotti() {
-        IOFileTXT filereader = new IOFileTXT();
-
-    }
-
-    @Override
-    public String toString() {
-        return "Amuber.Magazzino{\n" +
-                "\tlistaProdotti=" + listaProdotti.toString() +
-                "\n\tproprietario=" + proprietario.getCognome() +
-                "}\n";
-    }
-
-    /*
-    public ArrayList<Amuber.Prodotto> getListaProdotti() {
-        return listaProdotti;
-    }
-     */
-
-    /*
-    public void increaseQuantity(Amuber.Prodotto p, int newQuantity) {
-        if (newQuantity < 0) throw new IllegalArgumentException("La quantità deve essere maggiore di zero.");
-        int indexP = this.listaProdotti.indexOf(p);
-        Amuber.Prodotto tmp = listaProdotti.get(indexP);
-        tmp.setDisponibilita(tmp.getDisponibilita() + newQuantity);
-        listaProdotti.set(indexP, tmp);
-    }
-
-    public void decreaseQuantity(Amuber.Prodotto p, int newQuantity) {
-        if (newQuantity < 0) throw new IllegalArgumentException("La quantità deve essere maggiore di zero.");
-        int indexP = this.listaProdotti.indexOf(p);
-        Amuber.Prodotto tmp = listaProdotti.get(indexP);
-        if (newQuantity > tmp.getDisponibilita())
-            throw new IllegalArgumentException("La quantità da rimuovere eccede lo stock.");
-        tmp.setDisponibilita(tmp.getDisponibilita() - newQuantity);
-        listaProdotti.set(indexP, tmp);
-    }
-
-     */
-
     /**
      * in main:
      * try{
@@ -131,15 +94,38 @@ public class Magazzino implements Comparable<Prodotto> {
      * richiama modificaProdotto();
      * }
      */
-    /*
-    public boolean addProdotto(Amuber.Prodotto p) {
-        if (listaProdotti.contains(p)) throw new IllegalArgumentException("Amuber.Prodotto già presente nel magazzino.");
-        return listaProdotti.add(p);
+
+    public void aggiuntaProdotto(Prodotto p) throws IOException {
+        getListaProdotti(p.getCategoria());
+        if(prodotti.contains(p))
+            increaseQuantity(p);
+        else
+            prodotti.add(p);
+        interacter.updaterByCategoria(prodotti, this, p.getCategoria());
     }
 
-     */
-    @Override
-    public int compareTo(Prodotto o) {//viene/gono comparato/i il/i seguente/i parametro/i (di Amuber.Prodotto): codice
-        return -1;
+    public void getListaProdotti(Categoria c) {
+        prodotti = interacter.readProdottiByCategoria(c,this);
     }
+
+    @Override
+    public String toString() {
+        return "Magazzino{\n" +
+                "\tlistaProdotti=" + listaProdotti.toString() +
+                "\n\tproprietario=" + proprietario.getCognome() +
+                "}\n";
+    }
+
+
+    public void increaseQuantity(Prodotto p) {
+        for(Prodotto tmp : prodotti)
+        {
+            if(tmp.compareTo(p)==0) {
+                tmp.setDisponibilita(tmp.getDisponibilita() + p.getDisponibilita());
+                return;
+            }
+        }
+    }
+
+
 }

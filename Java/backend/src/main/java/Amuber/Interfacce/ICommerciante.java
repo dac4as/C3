@@ -1,14 +1,83 @@
 package Amuber.Interfacce;
 
-import Amuber.Users.Commerciante;
+import Amuber.Enums.Categoria;
+import Amuber.IOFileTXT;
+import Amuber.Magazzino;
+import Amuber.Prodotto;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.EnumSet;
 
 public class ICommerciante {
-    public void aggiungiProdotto(Commerciante commerciante) {
+
+
+    public void aggiungiProdotto(Magazzino m) throws IOException {//interfaccia dovrà essere senza firma
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
+
+        //andrebbe fatto qualche try-catch sennò bisogna rifare il prodotto da capo (in
+        // caso di errore di input)
+        System.out.println("\tAggiunta prodotto");
+
+        /**nome**/
+        System.out.println("\nNome prodotto: ");
+        String nomeP=console.readLine();
+
+        /**marca**/
+        System.out.println("\nMarca di "+nomeP+": ");
+        String marcaP=console.readLine();
+
+        /**categoria**/
+        System.out.println("\nCategoria di "+nomeP+": ");
+        int i=0;
+        for(Categoria categoria : EnumSet.allOf(Categoria.class))
+        {
+            System.out.println(i++ +" - "+categoria);
+        }
+        Categoria categoria=null;
+        switch(Integer.parseInt(console.readLine()))
+        {
+            case 1:
+                categoria=Categoria.Elettronica;
+                break;
+            case 2:
+                categoria=Categoria.Alimentare;
+                break;
+            case 3:
+                categoria=Categoria.Abbigliamento;
+                break;
+            case 4:
+                categoria=Categoria.Bricolage;
+                break;
+            case 5:
+                categoria=Categoria.Sport;
+                break;
+            case 6:
+                categoria=Categoria.Cancelleria;
+                break;
+            default:
+                System.err.println("Valore non accettato");
+                break;
+        }
+
+        System.out.println("\nIl prodotto "+nomeP+" verrà inserito nella categoria "+categoria.toString()+".");
+
+        /**disponibilità**/
+        System.out.println("\nInserire la disponibilità del prodotto (quantità): ");
+        int disponibilita=Integer.parseInt(console.readLine());//se non funziona, usare Scanner
+
+        /**prezzo**/
+        System.out.println("\nInserire il prezzo per un singolo pezzo: ");
+        double prezzo=Double.parseDouble(System.console().readLine());//idem
+
+        /**descrizione**/
+        System.out.println("\nInserire una descrizione per"+nomeP+" (può essere lasciato vuoto): ");
+        String descrizione=console.readLine();
+
+        m.aggiuntaProdotto(new Prodotto(nomeP, marcaP, disponibilita, prezzo, descrizione, categoria));
+        System.out.println("GG");
     }
 }

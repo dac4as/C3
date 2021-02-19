@@ -1,18 +1,19 @@
-Elettronica: 
-	[Empty]
-
-Alimentare: 
-	[Empty]
-
-	Sport: 
-	[Empty]
-
-Bricolage: 
-	[Empty]
-
-Abbigliamento: 
-	[Empty]
-
-Cancelleria: 
-	[Empty]
-
+Bricolage: 
+	[Empty]
+
+Alimentare: 
+®{nome=Pollo a fette, codice=80b051507fc233d5e8d2713e9701dae3, disponibilita=27, prezzo=4.32, descrizione=Petto di pollo tagliato a fette sottili, categoria=Alimentare}
+
+	Sport: 
+	[Empty]
+
+Cancelleria: 
+Ü{nome=Colla, codice=70ba089c648ae8ed7dd5ea8ca1b596c5, disponibilita=12, prezzo=5.99, descrizione=Colla comune, categoria=Cancelleria}
+è{nome=Matita, codice=08b97a02464d6c130920a899a160b630, disponibilita=10, prezzo=2.5, descrizione=Matita HB per disegno, categoria=Cancelleria}
+
+Elettronica: 
+ì{nome=Mouse Rival 600, codice=e34963e547e91c8a32be826e77f956e7, disponibilita=8, prezzo=78.56, descrizione=Mouse da gaming, categoria=Elettronica}
+
+Abbigliamento: 
+´{nome=TOP Shirt, codice=51c42afdb94520b5f13374253a714cd2, disponibilita=5, prezzo=10.99, descrizione=Maglia con logo ufficiale Twenty One Pilots, categoria=Abbigliamento}
+

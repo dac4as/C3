@@ -1,29 +1,27 @@
-Amuber/Interfacce/ICommerciante.java
- Amuber.Interfacce.ICommerciante
-Amuber/Attivita.java
- Amuber.Attivita
-Amuber/ListaProdotti.java
- Amuber.ListaProdotti
-Amuber/Users/Commerciante.java
- Amuber.Users.Commerciante
-Amuber/Users/User.java
- Amuber.Users.User
-Amuber/Users/Cliente.java
- Amuber.Users.Cliente
-Amuber/Enums/Zona.java
- Amuber.Enums.Zona
-Amuber/Enums/Categoria.java
- Amuber.Enums.Categoria
 Amuber/Enums/Veicolo.java
  Amuber.Enums.Veicolo
-Main.java
- Main
+Amuber/Users/Commerciante.java
+ Amuber.Users.Commerciante
+Amuber/Enums/Categoria.java
+ Amuber.Enums.Categoria
+Amuber/Enums/Zona.java
+ Amuber.Enums.Zona
+Amuber/Users/Cliente.java
+ Amuber.Users.Cliente
+Amuber/Users/User.java
+ Amuber.Users.User
+Amuber/ListaProdotti.java
+ Amuber.ListaProdotti
+Amuber/Interfacce/ICommerciante.java
+ Amuber.Interfacce.ICommerciante
 Amuber/Magazzino.java
  Amuber.Magazzino
 Amuber/Prodotto.java
  Amuber.Prodotto
 Amuber/IOFileTXT.java
  Amuber.IOFileTXT
+Main.java
+ Main
 Amuber/Carrello.java
  Amuber.Carrello
 Amuber/SystemIO.java

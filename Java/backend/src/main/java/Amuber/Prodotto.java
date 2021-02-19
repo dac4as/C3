@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
  * Classe che contiene l'istanziazione di un oggetto di tipo prodotto, il prodotto verrà creato al momento dell'aggiunta da parte
  * di un comemrciante al magazzino (che sono quindi disponibili per la vendita), che è una lista ed eventualmente salvato.
  */
-public class Prodotto {
+public class Prodotto implements Comparable<Prodotto> {
 
     final private String codice;
 
@@ -137,4 +137,9 @@ public class Prodotto {
     }
 
 
+    @Override
+    public int compareTo(Prodotto o) {
+        if(this.getCodice().equals(o.getCodice())) return 0;
+        else return 1;
+    }
 }

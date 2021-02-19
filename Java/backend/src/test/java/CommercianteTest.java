@@ -18,5 +18,6 @@ class CommercianteTest {
 
         System.out.println("ComID: " + comm2.getHashID());
         System.out.println("MagID: " + mag2.getHashID());
+
     }
 }

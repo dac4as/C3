@@ -2,8 +2,10 @@ import Amuber.Interfacce.ICommerciante;
 import Amuber.Magazzino;
 import Amuber.Users.Commerciante;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         /** Simulo login utilizzando la mail "mario.rossi@gmail.com" **/
 
@@ -19,7 +21,7 @@ public class Main {
 
         ICommerciante iCommerciante = new ICommerciante();
 
-        iCommerciante.aggiungiProdotto(comm1);
+        iCommerciante.aggiungiProdotto(mag1);
 
 
     }

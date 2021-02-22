@@ -15,13 +15,15 @@ public class Main {
         //Il commerciante seleziona l'attività "Pencil Hub" tra le sue attività
         Magazzino mag1 = new Magazzino("Pencil Hub", comm1, "Via San Mario 34");
 
-        //Il sistema recupera le informazioni riguardo Mario Rossi
-        Commerciante comm2 = new Commerciante("antonio.corradi@gmail.com", "Antonio", "Corradi", "3246452343");
-
-        //Il commerciante seleziona l'attività "Pencil Hub" tra le sue attività
-        Magazzino mag2 = new Magazzino("Coop", comm2, "Via San Mario 5");
+        /** Simulo aggiunta prodotto da parte del commerciante "Mario Rossi" nel magazzino di "Pencil Hub" **/
 
         ICommerciante iCommerciante = new ICommerciante();
-        //iCommerciante.aggiungiProdotto(mag1);
+        iCommerciante.aggiungiProdotto(mag1);
     }
+
+    //Il sistema recupera le informazioni riguardo Mario Rossi
+    //Commerciante comm2 = new Commerciante("antonio.corradi@gmail.com", "Antonio", "Corradi", "3246452343");
+
+    //Il commerciante seleziona l'attività "Pencil Hub" tra le sue attività
+    //Magazzino mag2 = new Magazzino("Coop", comm2, "Via San Mario 5");
 }

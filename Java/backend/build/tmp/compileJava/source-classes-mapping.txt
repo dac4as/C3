@@ -14,15 +14,15 @@ Amuber/ListaProdotti.java
  Amuber.ListaProdotti
 Amuber/Enums/Zona.java
  Amuber.Enums.Zona
-Amuber/Interfacce/ICommerciante.java
- Amuber.Interfacce.ICommerciante
+Amuber/Enums/Categoria.java
+ Amuber.Enums.Categoria
 Amuber/Prodotto.java
  Amuber.Prodotto
 Amuber/IOFileTXT.java
  Amuber.IOFileTXT
-Main.java
- Main
 Amuber/Enums/Veicolo.java
  Amuber.Enums.Veicolo
-Amuber/Enums/Categoria.java
- Amuber.Enums.Categoria
+Amuber/Interfacce/ICommerciante.java
+ Amuber.Interfacce.ICommerciante
+Main.java
+ Main

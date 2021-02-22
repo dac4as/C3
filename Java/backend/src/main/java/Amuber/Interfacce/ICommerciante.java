@@ -19,7 +19,7 @@ public class ICommerciante {
         try {
             //andrebbe fatto qualche try-catch sennò bisogna rifare il prodotto da capo (in
             // caso di errore di input)
-            System.out.println("\tAggiunta prodotto");
+            System.out.println("\n### Aggiunta prodotto ###");
 
             //nome
             System.out.print("\nNome prodotto: ");

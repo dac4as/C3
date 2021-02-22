@@ -265,13 +265,8 @@ Sviluppati:
 
 Nono e decimo colloquio:
 - 
-Inizio Implementazione prime classi in java
 
 Adattamento/modifica casi d'uso in VP:
-
-- Aggiunta prodotti da vendere
-
-Casi d'uso implementati in java:
 
 - Aggiunta prodotti da vendere
 
@@ -279,5 +274,69 @@ Aggiunta caso d'uso in VP:
 
 - Aggiunta prodotto INCLUDE modifica prodotto
 
+Prima occhiata al progetto in Java
+
 
 *************************************************************************************************************************************************
+
+Undicesimo colloquio:
+- 
+
+Diagramma di dominio (completato)
+
+Discussione riguardo codice Java
+
+
+*************************************************************************************************************************************************
+
+Dodicesimo e tredicesimo colloquio:
+- 
+
+Modello di Progetto
+
+Diagramma di sequenza "aggiunta prodotto" (completato)
+
+
+*************************************************************************************************************************************************
+
+Quattordicesimo colloquio:
+- 
+
+Diagramma di sequenza "aggiunta prodotto" revisionato
+Diagramma di sequenza "aggiunta nel carrello" iniziato
+
+
+*************************************************************************************************************************************************
+
+Quattordicesimo colloquio:
+- 
+
+Classi di progetto revisionato
+
+Diagramma di sequenza "aggiunta nel carrello" (completato)
+
+
+*************************************************************************************************************************************************
+
+Quindicesimo colloquio:
+- 
+
+Classi di progetto non revisionato completamente (carrello & ordine)
+
+Diagramma di sequenza "ricerca prodotto/categoria" (completato)
+Diagramma di sequenza "aggiunta nel carrello" da revisionare
+
+
+*************************************************************************************************************************************************
+
+Sedicesimo e diciassettesimo colloquio:
+- 
+
+Implementazione codice per caso d'uso "aggiunta prodotto" in Java (completato)
+
+
+*************************************************************************************************************************************************
+
+
+
+

@@ -1,3 +1,4 @@
+import Amuber.Interfacce.ICommerciante;
 import Amuber.Magazzino;
 import Amuber.Users.Commerciante;
 
@@ -20,7 +21,7 @@ public class Main {
         //Il commerciante seleziona l'attività "Pencil Hub" tra le sue attività
         Magazzino mag2 = new Magazzino("Coop", comm2, "Via San Mario 5");
 
-        //ICommerciante iCommerciante = new ICommerciante();
+        ICommerciante iCommerciante = new ICommerciante();
         //iCommerciante.aggiungiProdotto(mag1);
     }
 }

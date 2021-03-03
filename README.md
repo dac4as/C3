@@ -17,9 +17,9 @@ Corriere: si registra sulla piattaforma e si rende disponibile a effettuare tras
 
 *************************************************************************************************************************************************
 
-# Iterazione 1
+# ***Iterazione 1***
 
-#### Primo colloquio:
+### **Primo colloquio:**
 
 Definizione Attori Principali:
 
@@ -51,7 +51,7 @@ CLIENTE:
 
 *************************************************************************************************************************************************
 
-#### Secondo colloquio:
+### **Secondo colloquio:**
 
 Continuo definizione attori principali (sono 3 ma ne sono stati descritti 2):
 
@@ -65,7 +65,7 @@ CORRIERE:
 
 *************************************************************************************************************************************************
 
-#### Terzo colloquio:
+### **Terzo colloquio:**
 
 Analisi intensa e dettagliata di 3 casi d'uso.
 
@@ -91,14 +91,14 @@ CLIENTE:
 
 *************************************************************************************************************************************************
 
-#### Quarto colloquio:
+### **Quarto colloquio:**
 
 Discussione su come organizzarsi nei prossimi colloqui.
 
 
 *************************************************************************************************************************************************
 
-#### Quinto colloquio:
+### **Quinto colloquio:**
 
 Definizione miogliorata dei casi d'uso
 
@@ -182,7 +182,7 @@ ASTERISCHI -> casi d'uso principali
 
 *************************************************************************************************************************************************
 
-#### Sesto colloquio:
+### **Sesto colloquio:**
 
 Creazione diagramma casi d'uso in Visual Paradigm 
 
@@ -236,7 +236,7 @@ SERVER DI SISTEMA:
 
 *************************************************************************************************************************************************
 
-#### Settimo e Ottavo colloquio:
+### **Settimo e Ottavo colloquio:**
 
 Individuazione e sviluppo (specifico) casi d'uso principali
 
@@ -265,7 +265,7 @@ Sviluppati:
 
 *************************************************************************************************************************************************
 
-#### Nono e decimo colloquio:
+### **Nono e decimo colloquio:**
 
 Adattamento/modifica casi d'uso in VP:
 
@@ -280,7 +280,7 @@ Prima occhiata al progetto in Java
 
 *************************************************************************************************************************************************
 
-#### Undicesimo colloquio:
+### **Undicesimo colloquio:**
 
 Diagramma di dominio (completato)
 
@@ -289,7 +289,7 @@ Discussione riguardo codice Java
 
 *************************************************************************************************************************************************
 
-#### Dodicesimo e tredicesimo colloquio:
+### **Dodicesimo e tredicesimo colloquio:**
 
 Modello di Progetto
 
@@ -298,7 +298,7 @@ Diagramma di sequenza "aggiunta prodotto" (completato)
 
 *************************************************************************************************************************************************
 
-#### Quattordicesimo colloquio:
+### **Quattordicesimo colloquio:**
 
 Diagramma di sequenza "aggiunta prodotto" revisionato
 Diagramma di sequenza "aggiunta nel carrello" iniziato
@@ -306,7 +306,7 @@ Diagramma di sequenza "aggiunta nel carrello" iniziato
 
 *************************************************************************************************************************************************
 
-#### Quattordicesimo colloquio:
+### **Quattordicesimo colloquio:**
 
 Classi di progetto revisionato
 
@@ -315,7 +315,7 @@ Diagramma di sequenza "aggiunta nel carrello" (completato)
 
 *************************************************************************************************************************************************
 
-#### Quindicesimo colloquio:
+### **Quindicesimo colloquio:**
 
 Classi di progetto non revisionato completamente (carrello & ordine)
 
@@ -325,7 +325,7 @@ Diagramma di sequenza "aggiunta nel carrello" da revisionare
 
 *************************************************************************************************************************************************
 
-#### Sedicesimo e diciassettesimo colloquio:
+### **Sedicesimo e diciassettesimo colloquio:**
 
 Implementazione codice per caso d'uso "aggiunta prodotto" in Java (completato)
 

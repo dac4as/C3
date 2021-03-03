@@ -17,8 +17,10 @@ Corriere: si registra sulla piattaforma e si rende disponibile a effettuare tras
 
 *************************************************************************************************************************************************
 
-Primo colloquio:
--
+# Iterazione 1
+
+## Primo colloquio:
+
 Definizione Attori Principali:
 
 COMMERCIANTE----(assegna pacco)---->CORRIERE----(consegna pacco)---->CLIENTE(paga Piattaforma)
@@ -49,7 +51,7 @@ CLIENTE:
 
 *************************************************************************************************************************************************
 
-Secondo colloquio:
+## Secondo colloquio:
 - 
 Continuo definizione attori principali (sono 3 ma ne sono stati descritti 2):
 

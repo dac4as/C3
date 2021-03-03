@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/f6d5434e769f38385b70c7a051e1056d/Cancelleria/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/f6d5434e769f38385b70c7a051e1056d/Cancelleria/prodotti.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,17 +131,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="backend.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,19 +263,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.IOFileTXTTest" />
-      <item itemvalue="Gradle.IOFileTXTTest.test" />
       <item itemvalue="Gradle.CommercianteTest.test2" />
-      <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
+      <item itemvalue="Gradle.IOFileTXTTest.test" />
       <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
+      <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
       <item itemvalue="JUnit.IOFileTXTTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
         <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
         <item itemvalue="Gradle.IOFileTXTTest.test" />
         <item itemvalue="Gradle.CommercianteTest.test2" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +306,11 @@
       <workItem from="1613500907006" duration="88000" />
       <workItem from="1613574975743" duration="22179000" />
       <workItem from="1613754640504" duration="6520000" />
-      <workItem from="1614000065903" duration="1179000" />
+      <workItem from="1614000065903" duration="1370000" />
+      <workItem from="1614006356195" duration="962000" />
+      <workItem from="1614610249426" duration="470000" />
+      <workItem from="1614704953373" duration="286000" />
+      <workItem from="1614705272335" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

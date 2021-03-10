@@ -5,8 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Abbigliamento/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Alimentare/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Bricolage/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Cancelleria/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Elettronica/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Sport/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB 2.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Users/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Users/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Abbigliamento/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Abbigliamento/prodotti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Alimentare/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Alimentare/prodotti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Cancelleria/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Cancelleria/prodotti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Elettronica/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Elettronica/prodotti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IOFileTXTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB - Final.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Visual Paradigm/C3 - LNB - Final.vpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +82,8 @@
       <list>
         <option value="Interface" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,10 +129,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/Amuber" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -118,8 +154,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Amuber" />
       <recent name="Amuber.Users" />
+      <recent name="Amuber" />
       <recent name="Amuber.Interfacce" />
       <recent name="" />
     </key>
@@ -127,13 +163,38 @@
       <recent name="Intefacce" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.IOFileTXTTest.testreadProdotto">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="backend.main" />
+  <component name="RunManager" selected="Gradle.ClienteTest.test">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="ClienteTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ClienteTest.test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="CommercianteTest.test2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -261,21 +322,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="Gradle.CommercianteTest.test2" />
       <item itemvalue="Gradle.IOFileTXTTest.test" />
       <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
       <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
       <item itemvalue="JUnit.IOFileTXTTest" />
+      <item itemvalue="Gradle.ClienteTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
+        <item itemvalue="Gradle.ClienteTest.test" />
         <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
+        <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
         <item itemvalue="Gradle.IOFileTXTTest.test" />
         <item itemvalue="Gradle.CommercianteTest.test2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -311,6 +372,10 @@
       <workItem from="1614610249426" duration="470000" />
       <workItem from="1614704953373" duration="286000" />
       <workItem from="1614705272335" duration="59000" />
+      <workItem from="1614810253534" duration="100000" />
+      <workItem from="1614810376506" duration="842000" />
+      <workItem from="1614811253527" duration="134000" />
+      <workItem from="1615390844253" duration="3722000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

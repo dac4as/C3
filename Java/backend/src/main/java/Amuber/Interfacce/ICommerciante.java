@@ -40,7 +40,7 @@ public class ICommerciante {
             //descrizione
             System.out.print("\nInserire una descrizione per " + nomeP + " (può essere lasciato vuoto): ");
             String descrizione = console.readLine();
-            if(descrizione.isEmpty()) descrizione = "[NULL]";
+            if (descrizione.isEmpty()) descrizione = "[NULL]";
 
             //categoria
             int i = 1;

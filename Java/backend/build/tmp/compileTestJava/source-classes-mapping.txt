@@ -6,3 +6,5 @@ CommercianteTest.java
  CommercianteTest
 IOFileTXTTest.java
  IOFileTXTTest
+ClienteTest.java
+ ClienteTest

@@ -11,10 +11,26 @@
 
 package Amuber.Users;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Cliente extends User {
 
-    public Cliente(String nomeUtente, String nome, String cognome, String recapito) {
-        super(nomeUtente, nome, cognome, recapito);
+    public Cliente(String email, String nome, String cognome, String recapito) {
+        super(email, nome, cognome, recapito);
+
+        String path = "src/test/Amuber/Users/Cliente/" + this.getHashID();
+        File directory = new File(path);
+        if (!directory.exists()) {
+            try {
+                Files.createDirectories(Paths.get(path));
+                System.out.println("Directory is created!");
+            } catch (IOException e) {
+                System.err.println("Failed to create directory!" + e.getMessage());
+            }
+        } else System.out.println("Directory exist");
     }
 
 }

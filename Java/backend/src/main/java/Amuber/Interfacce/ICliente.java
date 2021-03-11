@@ -6,9 +6,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ICliente {
+public interface ICliente {
 
-    public void ricercaProdotto(Cliente cliente) throws IOException {
+    static void ricercaProdotto(Cliente cliente) throws IOException {
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
         try {

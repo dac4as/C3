@@ -10,9 +10,7 @@ class ClienteTest {
         /** Simulo login utilizzando la mail "germano.biagi@gmail.com" (cliente) **/
         Cliente cli1 = new Cliente("germano.biagi@gmail.com", "Germano", "Biagi", "3344564574");
 
-        ICliente iCliente = new ICliente();
-
-        iCliente.ricercaProdotto(cli1);
+        ICliente.ricercaProdotto(cli1);
     }
 
 

@@ -1,10 +1,7 @@
 package Amuber;
 
 import Amuber.Enums.Categoria;
-
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import Amuber.Interfacce.MD5;
 
 /**
  * Classe che contiene l'istanziazione di un oggetto di tipo prodotto, il prodotto verrà creato al momento dell'aggiunta da parte
@@ -30,13 +27,13 @@ public class Prodotto implements Comparable<Prodotto> {
         if (nome == null || descrizione == null || categoria == null) throw new NullPointerException();
         if (disponibilita <= 0 || prezzo <= 0)
             throw new IllegalArgumentException("Non è possibile inserire valori non accettati");
-        this.codice = this.setCodice(nome, marca, categoria);
         this.nome = nome;
         this.marca = marca;
         this.disponibilita = disponibilita;
         this.prezzo = prezzo;
         this.descrizione = descrizione;
         this.categoria = categoria;
+        this.codice = MD5.setCodice(new String[]{categoria.toString(), nome, marca});
     }
 
     //getters and setters
@@ -50,34 +47,6 @@ public class Prodotto implements Comparable<Prodotto> {
 
     public String getCodice() {
         return codice;
-    }
-
-    private String setCodice(String nome, String marca, Categoria categoria) {
-        String toReturn = categoria.toString() + nome + marca;
-        try {
-
-            // Static getInstance method is called with hashing MD5
-            MessageDigest md = MessageDigest.getInstance("MD5");
-
-            // digest() method is called to calculate message digest
-            //  of an input digest() return array of byte
-            byte[] messageDigest = md.digest(toReturn.getBytes());
-
-            // Convert byte array into signum representation
-            BigInteger no = new BigInteger(1, messageDigest);
-
-            // Convert message digest into hex value
-            String hashtext = no.toString(16);
-            while (hashtext.length() < 32) {
-                hashtext = "0" + hashtext;
-            }
-            return hashtext;
-        }
-
-        // For specifying wrong message digest algorithms
-        catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     public String getMarca() {

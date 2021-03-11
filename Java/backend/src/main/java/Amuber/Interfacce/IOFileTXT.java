@@ -1,14 +1,16 @@
-package Amuber;
+package Amuber.Interfacce;
 
 import Amuber.Enums.Categoria;
+import Amuber.Magazzino;
+import Amuber.Prodotto;
 import Amuber.Users.Commerciante;
 
 import java.io.*;
 import java.util.*;
 
-public class IOFileTXT {
+public interface IOFileTXT {
 
-    public HashMap<Categoria, Set<Prodotto>> readProdotti(Commerciante commerciante, Magazzino magazzino) {
+    static HashMap<Categoria, Set<Prodotto>> readProdotti(Commerciante commerciante, Magazzino magazzino) {
         HashMap<Categoria, Set<Prodotto>> prodotti = new HashMap<>();
 
         String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + commerciante.getHashID() + "/" + magazzino.getHashID();
@@ -21,7 +23,7 @@ public class IOFileTXT {
         return null;
     }
 
-    public Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag) {
+    static Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag) {
         Set<Prodotto> setProdotti = new HashSet<>();
         try {
             //inizializzo scanner
@@ -52,7 +54,7 @@ public class IOFileTXT {
      * @param c    categoria del set
      * @throws IOException
      */
-    public void updaterByCategoria(Set<Prodotto> setP, Magazzino m, Categoria c) throws IOException {
+    static void updaterByCategoria(Set<Prodotto> setP, Magazzino m, Categoria c) throws IOException {
 
         //creo sub-path
         String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + m.proprietario.getHashID() + "/" + m.getHashID();
@@ -76,7 +78,7 @@ public class IOFileTXT {
         }
     }
 
-    public Magazzino readList(String path) throws IOException {
+    static Magazzino readList(String path) throws IOException {
         /*
         FileReader fr = new FileReader(path);
         BufferedReader br = new BufferedReader(fr);
@@ -85,7 +87,7 @@ public class IOFileTXT {
         return null;
     }
 
-    public void writeList(String path, Magazzino mag) throws IOException {
+    static void writeList(String path, Magazzino mag) throws IOException {
 
         /*
         File file = new File(path);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IOFileTXTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-11T11:49:18" hostname="PC-CARDIF" time="0.027">
+  <properties/>
+  <testcase name="testreadProdotto()" classname="IOFileTXTTest" time="0.027"/>
+  <system-out><![CDATA[mario.rossi@gmail.comRossi
+Directory exist
+PencilHubfe820c13ce9d12a5b41ca6cb0bc6bcfa
+Directory exist
+ElettronicaMouseRival600Steelseries
+AlimentarePolloafetteFeleni
+AbbigliamentoTOPShirtCottonwave
+CancelleriaMatitaStaedtler
+CancelleriaCollaPrint
+Cancelleria: 
+{nome=Colla, codice=70ba089c648ae8ed7dd5ea8ca1b596c5, disponibilita=12, prezzo=5.99, descrizione=Colla comune, categoria=Cancelleria}
+{nome=Matita, codice=08b97a02464d6c130920a899a160b630, disponibilita=10, prezzo=2.5, descrizione=Matita HB per disegno, categoria=Cancelleria}
+
+Sport: 
+[Empty]
+
+Elettronica: 
+{nome=Mouse Rival 600, codice=c2e893beb1668eff738e8baf33bf8a58, disponibilita=8, prezzo=78.56, descrizione=Mouse da gaming, categoria=Elettronica}
+
+Abbigliamento: 
+{nome=TOP Shirt, codice=44186b5f909a1b8ea6af671e96727de4, disponibilita=5, prezzo=10.99, descrizione=Maglia con logo ufficiale Twenty One Pilots, categoria=Abbigliamento}
+
+Bricolage: 
+[Empty]
+
+Alimentare: 
+{nome=Pollo a fette, codice=2203c8365c70e5dcbd9b80af8caf0e65, disponibilita=27, prezzo=4.32, descrizione=Petto di pollo tagliato a fette sottili, categoria=Alimentare}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

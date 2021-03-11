@@ -11,7 +11,6 @@ import java.util.EnumSet;
 
 public interface ICommerciante {
 
-
     static void aggiungiProdotto(Magazzino m) throws IOException {//interfaccia dovrà essere senza firma
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));

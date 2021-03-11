@@ -9,9 +9,8 @@ public interface MD5 {
         String toReturn = "";
 
         for (String string : strings) {
-            toReturn = toReturn + string.replaceAll("\\s+","");;
+            toReturn = toReturn + string.replaceAll("\\s+","");
         }
-        System.out.println(toReturn);
 
         try {
 

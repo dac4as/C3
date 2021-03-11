@@ -39,11 +39,6 @@ public interface ICliente {
                     break;
             }
 
-
-
-
-
-
         } catch (IOException e) {
             System.err.println("Errore di input/output!");
             System.exit(1);

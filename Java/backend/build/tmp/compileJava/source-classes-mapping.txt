@@ -18,13 +18,15 @@ Amuber/Users/Commerciante.java
  Amuber.Users.Commerciante
 Amuber/Users/Cliente.java
  Amuber.Users.Cliente
-Main.java
- Main
+Amuber/Users/User.java
+ Amuber.Users.User
 Amuber/Magazzino.java
  Amuber.Magazzino
 Amuber/Prodotto.java
  Amuber.Prodotto
+Amuber/JavaFx/Amuber.java
+ Amuber.JavaFx.Amuber
 Amuber/Interfacce/MD5.java
  Amuber.Interfacce.MD5
-Amuber/Users/User.java
- Amuber.Users.User
+Amuber/JavaFx/Controller.java
+ Amuber.JavaFx.Controller

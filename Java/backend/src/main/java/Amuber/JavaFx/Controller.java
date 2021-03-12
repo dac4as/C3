@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+
 import java.io.IOException;
 
 public class Controller {
@@ -22,6 +23,9 @@ public class Controller {
 
     @FXML
     private Button sysOut;
+
+
+    /**Metodo per poter utilizzare la console di sviluppo**/
 
     public void consoleMode(javafx.event.ActionEvent actionEvent) throws IOException {
 
@@ -56,4 +60,21 @@ public class Controller {
         //Cliente cli1 = new Cliente("germano.biagi@gmail.com", "Germano", "Biagi", "3344564574");
     }
 
+    public void pressBtnCliente(javafx.event.ActionEvent actionEvent)
+    {
+        System.out.println(actionEvent);
+        //TODO Lancio interfaccia utente Cliente
+    }
+
+    public void pressBtnCommerciante(javafx.event.ActionEvent actionEvent)
+    {
+        System.out.println(actionEvent);
+        //TODO lancio interfaccia Commerciante
+    }
+
+    public void pressBtnCorriere(javafx.event.ActionEvent actionEvent)
+    {
+        //TODO Classe Corriere
+        //TODO lancio interfaccia Corriere
+    }
 }

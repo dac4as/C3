@@ -11,6 +11,8 @@
 
 package Amuber.Users;
 
+import Amuber.Interfacce.ICliente;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -31,6 +33,10 @@ public class Cliente extends User {
                 System.err.println("Failed to create directory!" + e.getMessage());
             }
         } else System.out.println("Directory exist");
+    }
+
+    public void ricercaProdotto() throws IOException {
+        ICliente.ricercaProdotto(this);
     }
 
 }

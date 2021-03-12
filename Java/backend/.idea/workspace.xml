@@ -5,36 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Amuber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/ControllerLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/amuber.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/test.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/test2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test FXml/example.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/MD5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Alimentare/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Alimentare/prodotti.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Bricolage/prodotti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Bricolage/prodotti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Catalogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Catalogo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/amuber.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/amuber.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +104,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/interfacciaTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />
@@ -278,12 +260,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Amuber" />
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
       <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
       <item itemvalue="Gradle.ClienteTest.test" />
       <item itemvalue="JUnit.IOFileTXTTest" />
-      <item itemvalue="Application.Amuber" />
     </list>
     <recent_temporary>
       <list>

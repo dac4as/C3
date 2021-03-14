@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java">
-      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Catalogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Catalogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/amuber.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/JavaFx/amuber.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +51,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -104,7 +91,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Pizzeria 4.0" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />
@@ -120,11 +107,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\main\java\Amuber\JavaFx" />
+      <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\test\Test FXml" />
       <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src" />
       <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\main\java\test" />
       <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\test" />
-      <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\main" />
-      <recent name="C:\Users\Niccolò\GIT\IDS-C3\C3\Java\backend\src\test\resources - 2\Magazzini" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -318,7 +305,12 @@
       <workItem from="1615459485462" duration="5186000" />
       <workItem from="1615469710065" duration="4114000" />
       <workItem from="1615476186013" duration="13000" />
-      <workItem from="1615482834796" duration="4985000" />
+      <workItem from="1615482834796" duration="5595000" />
+      <workItem from="1615492451117" duration="7000" />
+      <workItem from="1615566896737" duration="3893000" />
+      <workItem from="1615666510685" duration="633000" />
+      <workItem from="1615748249889" duration="326000" />
+      <workItem from="1615748945515" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

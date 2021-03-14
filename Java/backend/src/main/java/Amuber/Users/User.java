@@ -26,7 +26,7 @@ public abstract class User {
         this.nome = nome;
         this.cognome = cognome;
         this.recapito = recapito;
-        this.hashID = MD5.setCodice(new String[]{email, cognome});
+        this.hashID = MD5.setCodice(email, cognome);
         //più tutti gli altri parametri specifici per tipologia di utente
     }
 

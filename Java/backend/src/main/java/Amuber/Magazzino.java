@@ -38,7 +38,7 @@ public class Magazzino {
         this.nome = nome;
         this.proprietario = commerciante;
         this.indirizzo = indirizzo;
-        this.hashID = MD5.setCodice(new String[]{nome, proprietario.getHashID()});
+        this.hashID = MD5.setCodice(nome, proprietario.getHashID());
 
         String path = "src/test/Amuber/Users/Commerciante/" + proprietario.getHashID() + "/" + this.hashID;
         File directory = new File(path);
@@ -84,7 +84,7 @@ public class Magazzino {
      */
 
     public boolean aggiuntaProdotto(Prodotto p) throws IOException {
-        getListaProdotti(p.getCategoria());
+        this.getListaProdotti(p.getCategoria());
 
         boolean modifica = false;
 

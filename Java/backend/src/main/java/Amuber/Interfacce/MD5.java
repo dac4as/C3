@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public interface MD5 {
-    static String setCodice(String[] strings) {
+    static String setCodice(String... strings) {
         String toReturn = "";
 
         for (String string : strings) {
@@ -13,7 +13,6 @@ public interface MD5 {
         }
 
         try {
-
             // Static getInstance method is called with hashing MD5
             MessageDigest md = MessageDigest.getInstance("MD5");
 

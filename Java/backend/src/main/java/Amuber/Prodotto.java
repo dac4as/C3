@@ -33,7 +33,7 @@ public class Prodotto implements Comparable<Prodotto> {
         this.prezzo = prezzo;
         this.descrizione = descrizione;
         this.categoria = categoria;
-        this.codice = MD5.setCodice(new String[]{categoria.toString(), nome, marca});
+        this.codice = MD5.setCodice(categoria.toString(), nome, marca);
     }
 
     //getters and setters

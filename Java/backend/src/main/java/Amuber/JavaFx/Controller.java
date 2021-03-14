@@ -7,7 +7,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-
 import java.io.IOException;
 
 public class Controller {
@@ -23,9 +22,6 @@ public class Controller {
 
     @FXML
     private Button sysOut;
-
-
-    /**Metodo per poter utilizzare la console di sviluppo**/
 
     public void consoleMode(javafx.event.ActionEvent actionEvent) throws IOException {
 
@@ -53,7 +49,9 @@ public class Controller {
 
         //Simulo aggiunta prodotto da parte del commerciante "Mario Rossi" nel magazzino di "Pencil Hub"
 
-        ICommerciante.aggiungiProdotto(mag1);
+        ICommerciante iCommerciante = new ICommerciante();
+
+        iCommerciante.aggiungiProdotto(mag1);
 
         //Simulo login utilizzando la mail "germano.biagi@gmail.com" (cliente)
 
@@ -62,13 +60,13 @@ public class Controller {
 
     public void pressBtnCliente(javafx.event.ActionEvent actionEvent)
     {
-        System.out.println(actionEvent);
+        System.out.println("cliente");
         //TODO Lancio interfaccia utente Cliente
     }
 
     public void pressBtnCommerciante(javafx.event.ActionEvent actionEvent)
     {
-        System.out.println(actionEvent);
+        System.out.println("commerciante");
         //TODO lancio interfaccia Commerciante
     }
 
@@ -77,4 +75,5 @@ public class Controller {
         //TODO Classe Corriere
         //TODO lancio interfaccia Corriere
     }
+
 }

@@ -10,6 +10,8 @@ Amuber/JavaFx/ControllerLogin.java
  Amuber.JavaFx.ControllerLogin
 Amuber/Interfacce/IOFileTXT.java
  Amuber.Interfacce.IOFileTXT
+Amuber/Main.java
+ Amuber.Main
 Amuber/Users/Cliente.java
  Amuber.Users.Cliente
 Amuber/Interfacce/MD5.java
@@ -26,9 +28,9 @@ Amuber/Prodotto.java
  Amuber.Prodotto
 Amuber/Catalogo.java
  Amuber.Catalogo
-Amuber/Enums/Categoria.java
- Amuber.Enums.Categoria
-Amuber/Enums/Veicolo.java
- Amuber.Enums.Veicolo
 Amuber/JavaFx/Controller.java
  Amuber.JavaFx.Controller
+Amuber/Enums/Veicolo.java
+ Amuber.Enums.Veicolo
+Amuber/Enums/Categoria.java
+ Amuber.Enums.Categoria

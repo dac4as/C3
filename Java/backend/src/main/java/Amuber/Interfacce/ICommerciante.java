@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.EnumSet;
 
-public interface ICommerciante {
+public class ICommerciante {
 
-    static void aggiungiProdotto(Magazzino m) throws IOException {//interfaccia dovrà essere senza firma
+    public void aggiungiProdotto(Magazzino magazzino) throws IOException {//interfaccia dovrà essere senza firma
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
@@ -78,7 +78,7 @@ public interface ICommerciante {
 
             console.close();
 
-            if (m.aggiuntaProdotto(new Prodotto(nomeP, marcaP, disponibilita, prezzo, descrizione, categoria))) {
+            if (magazzino.aggiuntaProdotto(new Prodotto(nomeP, marcaP, disponibilita, prezzo, descrizione, categoria))) {
                 System.out.println("\n#### Prodotto modificato ####");
             } else System.out.println("\n#### Prodotto aggiunto ####");
 

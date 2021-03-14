@@ -1,6 +1,7 @@
 import Amuber.Interfacce.ICliente;
 import Amuber.Users.Cliente;
 import org.junit.jupiter.api.Test;
+
 import java.io.IOException;
 
 class ClienteTest {
@@ -10,7 +11,9 @@ class ClienteTest {
         /** Simulo login utilizzando la mail "germano.biagi@gmail.com" (cliente) **/
         Cliente cli1 = new Cliente("germano.biagi@gmail.com", "Germano", "Biagi", "3344564574");
 
-        ICliente.ricercaProdotto(cli1);
+        ICliente inter = new ICliente();
+
+        inter.ricercaProdotto(cli1);
     }
 
 

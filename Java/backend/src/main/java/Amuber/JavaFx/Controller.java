@@ -4,9 +4,13 @@ import Amuber.Interfacce.ICommerciante;
 import Amuber.Magazzino;
 import Amuber.Users.Commerciante;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Controller {
@@ -61,19 +65,29 @@ public class Controller {
     public void pressBtnCliente(javafx.event.ActionEvent actionEvent)
     {
         System.out.println("cliente");
-        //TODO Lancio interfaccia utente Cliente
+        //TODO Lancio interfaccia utente ICliente
     }
 
-    public void pressBtnCommerciante(javafx.event.ActionEvent actionEvent)
-    {
+    /**
+     * Quando verà premuto il btnCommerciante, verrà eseguito questo metodo per cambiare scena per ICommerciante
+     * @param actionEvent
+     */
+    public void pressBtnCommerciante(javafx.event.ActionEvent actionEvent) throws IOException {
         System.out.println("commerciante");
-        //TODO lancio interfaccia Commerciante
+        //TODO lancio interfaccia ICommerciante
+        Parent commercianteRoot = FXMLLoader.load(new File("src/main/java/Amuber/Interfacce/ICommerciante.fxml").toURI().toURL());
+        Scene commercianteScena = new Scene(commercianteRoot);
+        //recupero le informazioni della scena
+        Stage nextWindow = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
+        nextWindow.setScene(commercianteScena);
+        nextWindow.show();
+
     }
 
     public void pressBtnCorriere(javafx.event.ActionEvent actionEvent)
     {
         //TODO Classe Corriere
-        //TODO lancio interfaccia Corriere
+        //TODO lancio interfaccia ICorriere
     }
 
 }

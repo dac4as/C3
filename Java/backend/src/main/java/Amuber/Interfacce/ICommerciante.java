@@ -3,13 +3,26 @@ package Amuber.Interfacce;
 import Amuber.Enums.Categoria;
 import Amuber.Magazzino;
 import Amuber.Prodotto;
+import Amuber.Users.Commerciante;
+import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.EnumSet;
 
 public class ICommerciante {
+
+    @FXML
+    private ChoiceBox<Commerciante> listaCommercianti = new ChoiceBox<>();
+
+    @FXML
+    public void initialize() throws FileNotFoundException {
+        for(Commerciante c : IOFileTXT.getSetCommercianti())
+            listaCommercianti.getItems().add(c);
+    }
 
     public void aggiungiProdotto(Magazzino magazzino) throws IOException {//interfaccia dovrà essere senza firma
 

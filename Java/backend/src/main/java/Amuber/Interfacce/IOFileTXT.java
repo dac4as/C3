@@ -8,7 +8,7 @@ import Amuber.Users.Commerciante;
 import java.io.*;
 import java.util.*;
 
-public interface IOFileTXT {
+public class IOFileTXT {
 
     static HashMap<Categoria, Set<Prodotto>> readProdotti(Commerciante commerciante, Magazzino magazzino) {
         HashMap<Categoria, Set<Prodotto>> prodotti = new HashMap<>();
@@ -23,7 +23,7 @@ public interface IOFileTXT {
         return null;
     }
 
-    static Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag) {
+    public static Set<Prodotto> readProdottiByCategoria(Categoria c, Magazzino mag) {
         Set<Prodotto> setProdotti = new HashSet<>();
         try {
             //inizializzo scanner
@@ -54,7 +54,7 @@ public interface IOFileTXT {
      * @param c    categoria del set
      * @throws IOException
      */
-    static void updaterByCategoria(Set<Prodotto> setP, Magazzino m, Categoria c) throws IOException {
+    public static void updaterByCategoria(Set<Prodotto> setP, Magazzino m, Categoria c) throws IOException {
 
         //creo sub-path
         String pathMagazzino = "src/test/Amuber/Users/Commerciante/" + m.proprietario.getHashID() + "/" + m.getHashID();
@@ -77,6 +77,28 @@ public interface IOFileTXT {
             System.out.println("Error initializing stream");
         }
     }
+
+    public static Set<Commerciante> getSetCommercianti() throws FileNotFoundException {
+        Set<Commerciante> setCommerciante = new HashSet<>();
+        String listaComm = "src/test/Amuber/Users/Commerciante/email.txt";
+        try{
+            Scanner scanner = new Scanner(new File(listaComm));
+            //fino a quanto lo scanner ha una riga da leggere
+            while (scanner.hasNextLine()) {
+                //leggo una riga e la "splitto" usando il carattere ";"
+                String tokens[] = scanner.nextLine().split(";");
+                //aggiungo il prodotto nel set
+                setCommerciante.add(new Commerciante(tokens[3],tokens[1],tokens[2],tokens[4]));
+            }
+            //chiudo scanner
+            scanner.close();
+
+        } catch (FileNotFoundException e) {
+            System.err.println(e.toString());
+        }
+        return setCommerciante;
+    }
+
 
     static Magazzino readList(String path) throws IOException {
         /*

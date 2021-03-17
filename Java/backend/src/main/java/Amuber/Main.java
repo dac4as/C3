@@ -1,6 +1,7 @@
 package Amuber;
 
 import Amuber.Interfacce.ICommerciante;
+import Amuber.Interfacce.IOFileTXT;
 import Amuber.Users.Commerciante;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ public class Main {
 
         //Il sistema recupera le informazioni riguardo Mario Rossi
         Commerciante comm2 = new Commerciante("antonio.corradi@gmail.com", "Antonio", "Corradi", "3246452343");
+        System.out.println(comm2.toString());
 
         //Il commerciante seleziona l'attività "Pencil Hub" tra le sue attività
         Magazzino mag2 = new Magazzino("Coop", comm2, "Via San Mario 5");
@@ -28,9 +30,14 @@ public class Main {
 
         //Simulo aggiunta prodotto da parte del commerciante "Mario Rossi" nel magazzino di "Pencil Hub"
 
+        //System.out.println(mag1.getClass().getSimpleName());
         ICommerciante iCommerciante = new ICommerciante();
 
-        iCommerciante.aggiungiProdotto(mag1);
+        //iCommerciante.aggiungiProdotto(mag1);
+        for(Commerciante c: IOFileTXT.getSetCommercianti())
+        {
+            System.out.println(c);
+        }
 
         //Simulo login utilizzando la mail "germano.biagi@gmail.com" (cliente)
 

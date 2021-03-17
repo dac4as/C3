@@ -1,2 +1,0 @@
-08b97a02464d6c130920a899a160b630;Matita;Staedtler;10;2.5;Matita HB per disegno
-70ba089c648ae8ed7dd5ea8ca1b596c5;Colla;Print;12;5.99;Colla comune

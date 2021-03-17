@@ -61,4 +61,13 @@ public abstract class User {
     public String getHashID() {
         return hashID;
     }
+
+    public String toString()
+    {
+        return this.nome+" "+this.cognome+" "+this.email;
+    }
+    public String toFile() {
+        /** codice nome cognome email recapito **/
+        return hashID + ';' + nome + ';' + cognome + ';' + email + ';' + recapito + "\n";
+    }
 }

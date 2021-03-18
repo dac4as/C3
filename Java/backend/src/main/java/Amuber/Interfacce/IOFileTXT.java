@@ -87,7 +87,7 @@ public class IOFileTXT {
             while (scanner.hasNextLine()) {
                 //leggo una riga e la "splitto" usando il carattere ";"
                 String tokens[] = scanner.nextLine().split(";");
-                //aggiungo il prodotto nel set
+                //aggiungo il commerciante nel set
                 setCommerciante.add(new Commerciante(tokens[3],tokens[1],tokens[2],tokens[4]));
             }
             //chiudo scanner
@@ -99,6 +99,30 @@ public class IOFileTXT {
         return setCommerciante;
     }
 
+    /*
+    //proviamo i generics?
+    public static Set<? extends User> getSetUsers(<? extends User> user) throws FileNotFoundException {
+        Set<? extends User> setUser = new HashSet<>();
+        String listaUser = "src/test/Amuber/Users/"++"/email.txt;
+        try{
+            Scanner scanner = new Scanner(new File(listaUser));
+            //fino a quanto lo scanner ha una riga da leggere
+            while (scanner.hasNextLine()) {
+                //leggo una riga e la "splitto" usando il carattere ";"
+                String tokens[] = scanner.nextLine().split(";");
+                //aggiungo il prodotto nel set
+
+                setUser.add(new <? extends User>(tokens[3],tokens[1],tokens[2],tokens[4]));
+            }
+            //chiudo scanner
+            scanner.close();
+
+        } catch (FileNotFoundException e) {
+            System.err.println(e.toString());
+        }
+        return setUser;
+    }
+*/
 
     static Magazzino readList(String path) throws IOException {
         /*

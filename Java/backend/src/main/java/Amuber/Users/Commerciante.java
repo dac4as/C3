@@ -41,5 +41,4 @@ public class Commerciante extends User {
         } else System.out.println("Directory exist");
     }
 
-
 }

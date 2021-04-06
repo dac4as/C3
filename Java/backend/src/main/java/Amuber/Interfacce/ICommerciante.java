@@ -5,7 +5,9 @@ import Amuber.Magazzino;
 import Amuber.Prodotto;
 import Amuber.Users.Commerciante;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -16,14 +18,60 @@ import java.util.EnumSet;
 public class ICommerciante {
 
     @FXML
-    private ChoiceBox<Commerciante> listaCommercianti = new ChoiceBox<>();
+    private Button btnConferma;
+
+    @FXML
+    private Label labelNominativo;
+
+    @FXML
+    private Label labelNumero;
+
+    @FXML
+    private Label labelMail;
+
+    @FXML
+    private Label labelID;
+
+    @FXML
+    private Label ID;
+
+    @FXML
+    private Label labelInfo;
+
+    @FXML
+    private ChoiceBox<Commerciante> boxCommercianti = new ChoiceBox<>();
 
     @FXML
     public void initialize() throws FileNotFoundException {
         for(Commerciante c : IOFileTXT.getSetCommercianti())
-            listaCommercianti.getItems().add(c);
+            boxCommercianti.getItems().add(c);
+        System.out.println("Item caricati: "+boxCommercianti.getItems());
+        //System.out.println("Selezionato: "+boxCommercianti.getValue());
     }
 
+    public void sessionStart(){
+        System.out.println("Selezionato: "+boxCommercianti.getValue());
+        btnConferma.setDisable(true);
+        boxCommercianti.setDisable(true);
+        labelInfo.setVisible(true);
+        ID.setVisible(true);
+        Commerciante currComm = boxCommercianti.getValue();
+        labelNominativo.setText(currComm.getNome()+" "+currComm.getCognome());
+        labelID.setText(currComm.getHashID());
+        labelNumero.setText(currComm.getRecapito());
+        labelMail.setText(currComm.getEmail());
+    }
+
+    public void reset() throws FileNotFoundException {
+        btnConferma.setDisable(false);
+        boxCommercianti.setDisable(false);
+        labelInfo.setVisible(false);
+        ID.setVisible(false);
+        labelNominativo.setText("");
+        labelID.setText("");
+        labelNumero.setText("");
+        labelMail.setText("");
+    }
     public void aggiungiProdotto(Magazzino magazzino) throws IOException {//interfaccia dovrà essere senza firma
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));

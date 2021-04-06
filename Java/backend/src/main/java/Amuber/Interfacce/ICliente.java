@@ -8,6 +8,14 @@ import java.io.InputStreamReader;
 
 public class ICliente {
 
+
+
+
+
+
+
+
+
     public void ricercaProdotto(Cliente cliente) throws IOException {
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 

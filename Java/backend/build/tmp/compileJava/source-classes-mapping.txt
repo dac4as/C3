@@ -1,35 +1,35 @@
-Amuber/Magazzino.java
- Amuber.Magazzino
-Amuber/JavaFx/Amuber.java
- Amuber.JavaFx.Amuber
-Amuber/Users/Commerciante.java
- Amuber.Users.Commerciante
-Amuber/Carrello.java
- Amuber.Carrello
-Amuber/JavaFx/ControllerLogin.java
- Amuber.JavaFx.ControllerLogin
-Amuber/Interfacce/IOFileTXT.java
- Amuber.Interfacce.IOFileTXT
-Amuber/Enums/Veicolo.java
- Amuber.Enums.Veicolo
-Amuber/Users/Cliente.java
- Amuber.Users.Cliente
-Amuber/Interfacce/MD5.java
- Amuber.Interfacce.MD5
-Amuber/Users/User.java
- Amuber.Users.User
 Amuber/Enums/Zona.java
  Amuber.Enums.Zona
+Amuber/JavaFx/Amuber.java
+ Amuber.JavaFx.Amuber
+Amuber/Catalogo.java
+ Amuber.Catalogo
+Amuber/Enums/Veicolo.java
+ Amuber.Enums.Veicolo
+Amuber/JavaFx/ControllerLogin.java
+ Amuber.JavaFx.ControllerLogin
 Amuber/Enums/Categoria.java
  Amuber.Enums.Categoria
+Amuber/Users/User.java
+ Amuber.Users.User
+Amuber/Interfacce/MD5.java
+ Amuber.Interfacce.MD5
 Amuber/Interfacce/ICliente.java
  Amuber.Interfacce.ICliente
 Amuber/Prodotto.java
  Amuber.Prodotto
-Amuber/Catalogo.java
- Amuber.Catalogo
+Amuber/Users/Cliente.java
+ Amuber.Users.Cliente
 Amuber/Interfacce/ICommerciante.java
  Amuber.Interfacce.ICommerciante
+Amuber/Magazzino.java
+ Amuber.Magazzino
+Amuber/Users/Commerciante.java
+ Amuber.Users.Commerciante
+Amuber/Carrello.java
+ Amuber.Carrello
+Amuber/Interfacce/IOFileTXT.java
+ Amuber.Interfacce.IOFileTXT
 Amuber/Main.java
  Amuber.Main
 Amuber/JavaFx/Controller.java

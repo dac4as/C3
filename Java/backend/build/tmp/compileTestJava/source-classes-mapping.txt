@@ -2,6 +2,8 @@ CommercianteTest.java
  CommercianteTest
 MagazzinoTest.java
  MagazzinoTest
+MD5Test.java
+ MD5Test
 CarrelloTest.java
  CarrelloTest
 IOFileTXTTest.java

@@ -4,11 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="Correzione versione di jfx">
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="implementazione ICommerciante">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Abbigliamento/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Alimentare/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Bricolage/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Cancelleria/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Elettronica/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/e152bebdada49257c309f26518099257/6c77f963ac652da027428a8dc810b6c2/Sport/prodotti.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MD5Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/IOFileTXTTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-IOFileTXTTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Abbigliamento/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Alimentare/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Bricolage/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Cancelleria/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Elettronica/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/50b7fb82ba39cdd83e33cbd63ed284fc/Sport/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Abbigliamento/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Alimentare/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Bricolage/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Cancelleria/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Elettronica/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/530a449b7bd140deb3996f0b2b95926e/Sport/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/email.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/email.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Abbigliamento/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Alimentare/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Bricolage/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Cancelleria/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Elettronica/prodotti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/fe820c13ce9d12a5b41ca6cb0bc6bcfa/3409605c8791099b547da9e8b263e557/Sport/prodotti.txt" beforeDir="false" />
+    </list>
+    <list id="b7d35377-f9bc-422f-b1ab-731cf8b28c23" name="Changes by Cardif" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/IOFileTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/IOFileTXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Magazzino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Prodotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Users/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Users/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amuber/Users/Commerciante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +102,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -74,6 +128,18 @@
       </set>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Amuber/Interfacce/ICommerciante.java">
+      <ranges>
+        <range start1="45" end1="46" start2="45" end2="46" changelist="b7d35377-f9bc-422f-b1ab-731cf8b28c23" />
+        <range start1="47" end1="48" start2="47" end2="48" changelist="b7d35377-f9bc-422f-b1ab-731cf8b28c23" />
+        <range start1="51" end1="53" start2="51" end2="53" changelist="b7d35377-f9bc-422f-b1ab-731cf8b28c23" />
+        <range start1="58" end1="59" start2="58" end2="59" changelist="b7d35377-f9bc-422f-b1ab-731cf8b28c23" />
+        <range start1="64" end1="65" start2="64" end2="65" changelist="d0922eef-ebae-4c06-a1d3-79196bd8002e" />
+        <range start1="74" end1="74" start2="74" end2="75" changelist="d0922eef-ebae-4c06-a1d3-79196bd8002e" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
       <option value="15" />
@@ -94,6 +160,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -104,6 +171,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Amuber.Users" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Niccolò\GIT\IDS-C3\C3\Java\backend\src\main\java\Amuber\Interfacce" />
       <recent name="C:\Users\Cardif\Desktop\Ingegneria del Software\C3\Java\backend\src\test\Amuber" />
@@ -124,16 +194,16 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Amuber.Interfacce" />
       <recent name="Amuber.Users" />
       <recent name="Amuber" />
-      <recent name="Amuber.Interfacce" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Intefacce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Amuber">
+  <component name="RunManager" selected="Gradle.MD5Test">
     <configuration name="Amuber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Amuber.JavaFx.Amuber" />
       <module name="backend.main" />
@@ -150,13 +220,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="backend.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,6 +287,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MD5Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MD5Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="IOFileTXTTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -245,21 +329,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Amuber" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
       <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
       <item itemvalue="JUnit.IOFileTXTTest" />
+      <item itemvalue="Gradle.MD5Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MD5Test" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Amuber" />
         <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
         <item itemvalue="Gradle.IOFileTXTTest.testwriteProdotto" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616006027163</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implementazione ICommerciante">
+      <created>1617748486348</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617748486348</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +486,8 @@
     <MESSAGE value="Decimo colloquio&#10;&#10;Aggiunta e modifica ai casi d'uso su VP e inizio delle loro implementazioni in java" />
     <MESSAGE value="Realizzazione caso d'uso SIMULATO login Commerciante&#10;&#10;revisioni delle interfacce utente, in particolar modo di ICommerciante&#10;&#10;realizzazione del metodo getListaCommercianti su IOFileTXT (è stato reso Classe a tutti gli effetti)" />
     <MESSAGE value="Correzione versione di jfx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correzione versione di jfx" />
+    <MESSAGE value="implementazione ICommerciante" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementazione ICommerciante" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

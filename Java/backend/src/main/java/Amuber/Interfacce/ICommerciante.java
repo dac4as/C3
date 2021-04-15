@@ -62,7 +62,7 @@ public class ICommerciante {
         labelMail.setText(currComm.getEmail());
     }
 
-    public void reset() throws FileNotFoundException {
+    public void reset() {
         btnConferma.setDisable(false);
         boxCommercianti.setDisable(false);
         labelInfo.setVisible(false);
@@ -72,6 +72,7 @@ public class ICommerciante {
         labelNumero.setText("");
         labelMail.setText("");
     }
+
     public void aggiungiProdotto(Magazzino magazzino) throws IOException {//interfaccia dovrà essere senza firma
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));

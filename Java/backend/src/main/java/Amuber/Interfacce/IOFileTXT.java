@@ -78,17 +78,17 @@ public class IOFileTXT {
         }
     }
 
-    public static Set<Commerciante> getSetCommercianti() throws FileNotFoundException {
+    public static Set<Commerciante> getCommercianti() throws FileNotFoundException {
         Set<Commerciante> setCommerciante = new HashSet<>();
         String listaComm = "src/test/Amuber/Users/Commerciante/email.txt";
-        try{
+        try {
             Scanner scanner = new Scanner(new File(listaComm));
             //fino a quanto lo scanner ha una riga da leggere
             while (scanner.hasNextLine()) {
                 //leggo una riga e la "splitto" usando il carattere ";"
                 String tokens[] = scanner.nextLine().split(";");
                 //aggiungo il commerciante nel set
-                setCommerciante.add(new Commerciante(tokens[3],tokens[1],tokens[2],tokens[4]));
+                setCommerciante.add(new Commerciante(tokens[3], tokens[1], tokens[2], tokens[4]));
             }
             //chiudo scanner
             scanner.close();

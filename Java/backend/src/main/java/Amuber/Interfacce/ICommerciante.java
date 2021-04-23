@@ -43,20 +43,20 @@ public class ICommerciante {
 
     @FXML
     public void initialize() throws FileNotFoundException {
-        for(Commerciante c : IOFileTXT.getSetCommercianti())
+        for (Commerciante c : IOFileTXT.getCommercianti())
             boxCommercianti.getItems().add(c);
-        System.out.println("Item caricati: "+boxCommercianti.getItems());
+        System.out.println("Item caricati: " + boxCommercianti.getItems());
         //System.out.println("Selezionato: "+boxCommercianti.getValue());
     }
 
-    public void sessionStart(){
-        System.out.println("Selezionato: "+boxCommercianti.getValue());
+    public void sessionStart() {
+        System.out.println("Selezionato: " + boxCommercianti.getValue());
         btnConferma.setDisable(true);
         boxCommercianti.setDisable(true);
         labelInfo.setVisible(true);
         ID.setVisible(true);
         Commerciante currComm = boxCommercianti.getValue();
-        labelNominativo.setText(currComm.getNome()+" "+currComm.getCognome());
+        labelNominativo.setText(currComm.getNome() + " " + currComm.getCognome());
         labelID.setText(currComm.getHashID());
         labelNumero.setText(currComm.getRecapito());
         labelMail.setText(currComm.getEmail());

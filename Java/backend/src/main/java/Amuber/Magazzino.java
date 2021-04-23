@@ -49,11 +49,11 @@ public class Magazzino {
                     Files.createDirectories(Paths.get(path + "/" + categoria));
                     Files.createFile(Paths.get(path + "/" + categoria + "/prodotti.txt"));
                 }
-                System.out.println("Directory are created!");
+                System.out.println("Directory are created for " + this.nome + " !");
             } catch (IOException e) {
-                System.err.println("Failed to create directory!" + e.getMessage());
+                System.err.println("Failed to create directory for " + this.nome + " ! -> " + e.getMessage());
             }
-        } else System.out.println("Directory exist");
+        } else System.out.println("Directory exist for " + this.nome + " !");
     }
 
     public String getHashID() {

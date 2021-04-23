@@ -26,11 +26,10 @@ public class Cliente extends User {
         if (!directory.exists()) {
             try {
                 Files.createDirectories(Paths.get(path));
-                System.out.println("Directory is created!");
+                System.out.println("Directory is created for " + this.getEmail() + " !");
             } catch (IOException e) {
-                System.err.println("Failed to create directory!" + e.getMessage());
+                System.err.println("Failed to create directory for " + this.getEmail() + " ! -> " + e.getMessage());
             }
-        } else System.out.println("Directory exist");
+        } else System.out.println("Directory exist for " + this.getEmail() + " !");
     }
-
 }

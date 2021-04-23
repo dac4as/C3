@@ -105,10 +105,9 @@ public class Prodotto implements Comparable<Prodotto> {
                 "}\n";
     }
 
-
     @Override
     public int compareTo(Prodotto o) {
-        if(this.getCodice().equals(o.getCodice())) return 0;
+        if (this.getCodice().equals(o.getCodice())) return 0;
         else return 1;
     }
 }

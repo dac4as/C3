@@ -34,7 +34,7 @@ public class Main {
         ICommerciante iCommerciante = new ICommerciante();
 
         //iCommerciante.aggiungiProdotto(mag1);
-        for(Commerciante c: IOFileTXT.getSetCommercianti())
+        for(Commerciante c: IOFileTXT.getCommercianti())
         {
             System.out.println(c);
         }

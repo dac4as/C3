@@ -1,14 +1,21 @@
 package Amuber.Interfacce;
 
+import Amuber.Carrello;
 import Amuber.Enums.Categoria;
 import Amuber.Magazzino;
 import Amuber.Prodotto;
+import Amuber.Users.Cliente;
 import Amuber.Users.Commerciante;
 
 import java.io.*;
 import java.util.*;
 
 public class IOFileTXT {
+
+    public static Carrello readCarrello(Cliente cliente) {
+        //leggo carrello da cliente
+        return null;
+    }
 
     static HashMap<Categoria, Set<Prodotto>> readProdotti(Commerciante commerciante, Magazzino magazzino) {
         HashMap<Categoria, Set<Prodotto>> prodotti = new HashMap<>();
@@ -35,7 +42,7 @@ public class IOFileTXT {
                 String tokens[] = scanner.nextLine().split(";");
 
                 //aggiungo il prodotto nel set
-                setProdotti.add(new Prodotto(tokens[1], tokens[2], Integer.parseInt(tokens[3]), Double.parseDouble(tokens[4]), tokens[5], c));
+                setProdotti.add(new Prodotto(tokens[1], tokens[2], Integer.parseInt(tokens[3]), Double.parseDouble(tokens[4]), tokens[5], c, mag));
             }
             //chiudo scanner
             scanner.close();
@@ -67,7 +74,7 @@ public class IOFileTXT {
 
             //inserisco tutti i prodotti appartenenti a quella categoria
             for (Prodotto prodotto : setP) {
-                bufferedWriter.append(prodotto.toFile());
+                bufferedWriter.append(prodotto.toFile(false));
             }
             //chiudo il file
             bufferedWriter.close();

@@ -1,5 +1,7 @@
 import Amuber.Enums.Categoria;
+import Amuber.Magazzino;
 import Amuber.Prodotto;
+import Amuber.Users.Commerciante;
 import org.junit.jupiter.api.Test;
 
 class MagazzinoTest {
@@ -22,7 +24,9 @@ class MagazzinoTest {
 
     @Test
     void increaseQuantity() {
-        Prodotto prod1 = new Prodotto("Razzetto", "China", 12, 5, "Razzetti per capodanno", Categoria.valueOf("Bricolage"));
+        Commerciante comm1 = new Commerciante("mario.rossi@gmail.com", "Mario", "Rossi", "3225552431");
+        Magazzino mag1 = new Magazzino("Pencil Hub", comm1, "Via San Mario 34");
+        Prodotto prod1 = new Prodotto("Razzetto", "China", 12, 5, "Razzetti per capodanno", Categoria.valueOf("Bricolage"), mag1);
         System.out.println(prod1.toString());
 
     }

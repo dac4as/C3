@@ -2,18 +2,12 @@ package Amuber.Interfacce;
 
 import Amuber.Enums.Categoria;
 import Amuber.Users.Cliente;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ICliente {
-
-
-
-
-
-
-
 
 
     public void ricercaProdotto(Cliente cliente) throws IOException {

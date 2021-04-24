@@ -11,6 +11,9 @@
 
 package Amuber.Users;
 
+import Amuber.Carrello;
+import Amuber.Interfacce.IOFileTXT;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,7 +21,11 @@ import java.nio.file.Paths;
 
 public class Cliente extends User {
 
-    public Cliente(String email, String nome, String cognome, String recapito) {
+    private final Carrello carrello;
+
+    private String indirizzo;
+
+    public Cliente(String email, String nome, String cognome, String recapito, String indirizzo, Carrello carrello) {
         super(email, nome, cognome, recapito);
 
         String path = "src/test/Amuber/Users/Cliente/" + this.getHashID();
@@ -31,5 +38,13 @@ public class Cliente extends User {
                 System.err.println("Failed to create directory for " + this.getEmail() + " ! -> " + e.getMessage());
             }
         } else System.out.println("Directory exist for " + this.getEmail() + " !");
+
+
+        this.indirizzo = indirizzo;
+        this.carrello = IOFileTXT.readCarrello(this);
+    }
+
+    public Carrello getCarrello() {
+        return this.carrello;
     }
 }

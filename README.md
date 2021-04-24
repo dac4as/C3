@@ -332,6 +332,10 @@ Implementazione codice per caso d'uso "aggiunta prodotto" in Java (completato)
 
 *************************************************************************************************************************************************
 
+### **Diciottesimo colloquio:**
+
+"Pulizia" codice Java (aggiunta relazione tra prodotto e magazzino)
+Diagramma di sequenza "creazione ordine" (completato)
 
 
-
+*************************************************************************************************************************************************

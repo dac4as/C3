@@ -23,7 +23,9 @@ public class Prodotto implements Comparable<Prodotto> {
 
     private Categoria categoria;
 
-    public Prodotto(String nome, String marca, int disponibilita, double prezzo, String descrizione, Categoria categoria) {
+    private final Magazzino magazzino;
+
+    public Prodotto(String nome, String marca, int disponibilita, double prezzo, String descrizione, Categoria categoria, Magazzino magazzino) {
         if (nome == null || descrizione == null || categoria == null) throw new NullPointerException();
         if (disponibilita <= 0 || prezzo <= 0)
             throw new IllegalArgumentException("Non è possibile inserire valori non accettati");
@@ -33,6 +35,7 @@ public class Prodotto implements Comparable<Prodotto> {
         this.prezzo = prezzo;
         this.descrizione = descrizione;
         this.categoria = categoria;
+        this.magazzino = magazzino;
         this.codice = MD5.setCodice(categoria.toString(), nome, marca);
     }
 
@@ -89,9 +92,14 @@ public class Prodotto implements Comparable<Prodotto> {
         this.categoria = categoria;
     }
 
-    public String toFile() {
+    public Magazzino getMagazzino() {
+        return magazzino;
+    }
+
+    public String toFile(boolean withMagazzino) {
         /** codice nome marca disponibilita prezzo descrizione **/
-        return codice + ';' + nome + ';' + marca + ';' + disponibilita + ';' + prezzo + ';' + descrizione + "\n";
+        String tofile = new String(codice + ';' + nome + ';' + marca + ';' + disponibilita + ';' + prezzo + ';' + descrizione);
+        return withMagazzino ? tofile + ";" + magazzino.getHashID() + "\n" : tofile + "\n";
     }
 
     @Override

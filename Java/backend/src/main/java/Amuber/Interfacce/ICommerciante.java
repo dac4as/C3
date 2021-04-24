@@ -140,7 +140,7 @@ public class ICommerciante {
 
             console.close();
 
-            if (magazzino.aggiuntaProdotto(new Prodotto(nomeP, marcaP, disponibilita, prezzo, descrizione, categoria))) {
+            if (magazzino.aggiuntaProdotto(new Prodotto(nomeP, marcaP, disponibilita, prezzo, descrizione, categoria, magazzino))) {
                 System.out.println("\n#### Prodotto modificato ####");
             } else System.out.println("\n#### Prodotto aggiunto ####");
 

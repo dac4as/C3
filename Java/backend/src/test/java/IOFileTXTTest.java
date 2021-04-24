@@ -27,11 +27,11 @@ class IOFileTXTTest {
         //Magazzino mag1 = new Magazzino("Coop", comm1, "Via San Mario 5");
 
         //creo prodotti e li carico nella mappa
-        Prodotto pro1 = new Prodotto("Matita", "Staedtler", 10, 2.50, "Matita HB per disegno", Categoria.Cancelleria);
-        Prodotto pro2 = new Prodotto("Colla", "Print", 12, 5.99, "Colla comune", Categoria.Cancelleria);
-        Prodotto pro3 = new Prodotto("TOP Shirt", "Cottonwave", 5, 10.99, "Maglia con logo ufficiale Twenty One Pilots", Categoria.Abbigliamento);
-        Prodotto pro4 = new Prodotto("Mouse Rival 600", "Steelseries", 8, 78.56, "Mouse da gaming", Categoria.Elettronica);
-        Prodotto pro5 = new Prodotto("Pollo a fette", "Feleni", 27, 4.32, "Petto di pollo tagliato a fette sottili", Categoria.Alimentare);
+        Prodotto pro1 = new Prodotto("Matita", "Staedtler", 10, 2.50, "Matita HB per disegno", Categoria.Cancelleria, mag1);
+        Prodotto pro2 = new Prodotto("Colla", "Print", 12, 5.99, "Colla comune", Categoria.Cancelleria, mag1);
+        Prodotto pro3 = new Prodotto("TOP Shirt", "Cottonwave", 5, 10.99, "Maglia con logo ufficiale Twenty One Pilots", Categoria.Abbigliamento, mag1);
+        Prodotto pro4 = new Prodotto("Mouse Rival 600", "Steelseries", 8, 78.56, "Mouse da gaming", Categoria.Elettronica, mag1);
+        Prodotto pro5 = new Prodotto("Pollo a fette", "Feleni", 27, 4.32, "Petto di pollo tagliato a fette sottili", Categoria.Alimentare, mag1);
         listaProdotti.get(pro1.getCategoria()).add(pro1);
         listaProdotti.get(pro2.getCategoria()).add(pro2);
         listaProdotti.get(pro3.getCategoria()).add(pro3);
@@ -51,7 +51,7 @@ class IOFileTXTTest {
 
                 //inserisco tutti i prodotti appartenenti a quella categoria
                 for (Prodotto prodotto : listaProdotti.get(cat)) {
-                    bufferedWriter.append(prodotto.toFile());
+                    bufferedWriter.append(prodotto.toFile(false));
                 }
                 //chiudo il file
                 bufferedWriter.close();
@@ -91,7 +91,7 @@ class IOFileTXTTest {
                     String tokens[] = scanner.nextLine().split(";");
 
                     //aggiungo il prodotto nella mappa
-                    listaProdotti.get(categoria).add(new Prodotto(tokens[1], tokens[2], Integer.parseInt(tokens[3]), Double.parseDouble(tokens[4]), tokens[5], categoria));
+                    listaProdotti.get(categoria).add(new Prodotto(tokens[1], tokens[2], Integer.parseInt(tokens[3]), Double.parseDouble(tokens[4]), tokens[5], categoria, mag1));
                 }
                 //chiudo scanner
                 scanner.close();

@@ -1,4 +1,4 @@
-package Amuber.Interfacce;
+package Amuber.Viste;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

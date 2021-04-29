@@ -1,4 +1,4 @@
-package Amuber.Interfacce;
+package Amuber.Viste;
 
 import Amuber.Enums.Categoria;
 import Amuber.Magazzino;
@@ -72,6 +72,10 @@ public class ICommerciante {
         labelNumero.setText("");
         labelMail.setText("");
     }
+
+    /**
+     * Inizio codice
+     **/
 
     public void aggiungiProdotto(Magazzino magazzino) throws IOException {//interfaccia dovrà essere senza firma
 

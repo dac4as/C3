@@ -1,7 +1,7 @@
 package Amuber;
 
 import Amuber.Enums.Categoria;
-import Amuber.Interfacce.MD5;
+import Amuber.Viste.MD5;
 
 /**
  * Classe che contiene l'istanziazione di un oggetto di tipo prodotto, il prodotto verrà creato al momento dell'aggiunta da parte

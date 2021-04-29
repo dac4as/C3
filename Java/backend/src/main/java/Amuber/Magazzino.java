@@ -1,8 +1,8 @@
 package Amuber;
 
 import Amuber.Enums.Categoria;
-import Amuber.Interfacce.IOFileTXT;
-import Amuber.Interfacce.MD5;
+import Amuber.Viste.IOFileTXT;
+import Amuber.Viste.MD5;
 import Amuber.Users.Commerciante;
 
 import java.io.File;

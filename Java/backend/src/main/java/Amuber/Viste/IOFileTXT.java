@@ -1,4 +1,4 @@
-package Amuber.Interfacce;
+package Amuber.Viste;
 
 import Amuber.Carrello;
 import Amuber.Enums.Categoria;
@@ -8,9 +8,25 @@ import Amuber.Users.Cliente;
 import Amuber.Users.Commerciante;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class IOFileTXT {
+
+    static void checkFiles(Class classe) {
+        String path = "src/test/Amuber/Users/" + classe.getSimpleName() + "/" ;
+
+        File directory = new File(path);
+        if (!directory.exists()) {
+            try {
+                Files.createDirectories(Paths.get(path));
+                //System.out.println("Directory is created for " + this.getEmail() + " !");
+            } catch (IOException e) {
+                //System.err.println("Failed to create directory for " + this.getEmail() + " ! -> " + e.getMessage());
+            }
+        } //else System.out.println("Directory exist for " + this.getEmail() + " !");
+    }
 
     public static Carrello readCarrello(Cliente cliente) {
         //leggo carrello da cliente

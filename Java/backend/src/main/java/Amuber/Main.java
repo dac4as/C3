@@ -1,7 +1,7 @@
 package Amuber;
 
-import Amuber.Interfacce.ICommerciante;
-import Amuber.Interfacce.IOFileTXT;
+import Amuber.Viste.ICommerciante;
+import Amuber.Viste.IOFileTXT;
 import Amuber.Users.Commerciante;
 
 import java.io.IOException;

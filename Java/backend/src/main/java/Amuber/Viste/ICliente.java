@@ -1,5 +1,6 @@
-package Amuber.Interfacce;
+package Amuber.Viste;
 
+import Amuber.Catalogo;
 import Amuber.Enums.Categoria;
 import Amuber.Users.Cliente;
 
@@ -11,11 +12,16 @@ public class ICliente {
 
 
     public void ricercaProdotto(Cliente cliente) throws IOException {
-        BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+        Catalogo catalogo = new Catalogo();
 
+    }
+
+
+    private Categoria sceltaCategoria() {
+        BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+        Categoria categoria = null;
         try {
             System.out.print("Selezionare la categoria da ricercare: ");
-            Categoria categoria = null;
 
             switch (Integer.parseInt(console.readLine())) {
                 case 1:
@@ -40,7 +46,6 @@ public class ICliente {
                     System.err.println("Valore non accettato");
                     break;
             }
-
         } catch (IOException e) {
             System.err.println("Errore di input/output!");
             System.exit(1);
@@ -51,6 +56,8 @@ public class ICliente {
             System.err.println("ERRORE: " + e.getMessage());
             System.exit(2);
         }
+
+        return categoria;
     }
 
 }

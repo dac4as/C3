@@ -1,6 +1,6 @@
 package Amuber.JavaFx;
 
-import Amuber.Interfacce.ICommerciante;
+import Amuber.Viste.ICommerciante;
 import Amuber.Magazzino;
 import Amuber.Users.Commerciante;
 import javafx.fxml.FXML;

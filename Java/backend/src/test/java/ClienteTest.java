@@ -1,5 +1,5 @@
 import Amuber.Carrello;
-import Amuber.Interfacce.ICliente;
+import Amuber.Viste.ICliente;
 import Amuber.Users.Cliente;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,11 @@
 package Amuber.Users;
 
-import Amuber.Interfacce.MD5;
+import Amuber.Viste.MD5;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * Classe astratta (non istanziabile) che contiene tutte le informazioni che un utente registrato deve avere per poter utilizzare la piattaforma
@@ -13,10 +18,10 @@ import Amuber.Interfacce.MD5;
  */
 public abstract class User {
     //private String nomeUtente;
-    private String nome;
-    private String cognome;
+    private final String nome;
+    private final String cognome;
     private final String email;
-    private String recapito;
+    private final String recapito;
     private final String hashID;
 
     //un user a livello concettuale è composto da....:
@@ -34,20 +39,8 @@ public abstract class User {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getCognome() {
         return cognome;
-    }
-
-    public void setCognome(String cognome) {
-        this.cognome = cognome;
-    }
-
-    public void setRecapito(String recapito) {
-        this.recapito = recapito;
     }
 
     public String getRecapito() {
@@ -62,12 +55,29 @@ public abstract class User {
         return hashID;
     }
 
-    public String toString()
-    {
-        return this.nome+" "+this.cognome+" "+this.email;
+    public String toString() {
+        return this.nome + " " + this.cognome + " " + this.email;
     }
+
+/*
     public String toFile() {
-        /** codice nome cognome email recapito **/
-        return hashID + ';' + nome + ';' + cognome + ';' + email + ';' + recapito + "\n";
+        return email + ';' + nome + ';' + cognome + ';' + recapito + "\n";
+    }
+*/
+
+    public void checkFiles() {
+
+        String path = "src/test/Amuber/Users/" + getClass().getSimpleName() + "/" + this.getHashID();
+
+        File directory = new File(path);
+        if (!directory.exists()) {
+            try {
+                Files.createDirectories(Paths.get(path));
+                System.out.println("Directory is created for " + this.getEmail() + " !");
+            } catch (IOException e) {
+                System.err.println("Failed to create directory for " + this.getEmail() + " ! -> " + e.getMessage());
+            }
+        } else System.out.println("Directory exist for " + this.getEmail() + " !");
+
     }
 }

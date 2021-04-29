@@ -1,4 +1,2 @@
-af60bcd80b2ff878a09c67ed2b4ee885;Antonio;Corradi;antonio.corradi@gmail.com;3246452343
-fe820c13ce9d12a5b41ca6cb0bc6bcfa;Mario;Rossi;mario.rossi@gmail.com;3225552431
-4db542cf0a275d8a0a7f927b3b5e2c58;Antonio;Corradi;antonio.corradi@gmail.com;3246452343
+e152bebdada49257c309f26518099257;Mario;Rossi;mario.rossi@gmail.com;3225552431
 af60bcd80b2ff878a09c67ed2b4ee885;Antonio;Corradi;antonio.corradi@gmail.com;3246452343

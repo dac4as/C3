@@ -282,60 +282,60 @@ Prima occhiata al progetto in Java
 
 ### **Undicesimo colloquio:**
 
-Diagramma di dominio (completato)
+- Diagramma di dominio (completato)
 
-Discussione riguardo codice Java
+- Discussione riguardo codice Java
 
 
 *************************************************************************************************************************************************
 
 ### **Dodicesimo e tredicesimo colloquio:**
 
-Modello di Progetto
+- Modello di Progetto
 
-Diagramma di sequenza "aggiunta prodotto" (completato)
-
-
-*************************************************************************************************************************************************
-
-### **Quattordicesimo colloquio:**
-
-Diagramma di sequenza "aggiunta prodotto" revisionato
-Diagramma di sequenza "aggiunta nel carrello" iniziato
+- Diagramma di sequenza "aggiunta prodotto" (completato)
 
 
 *************************************************************************************************************************************************
 
 ### **Quattordicesimo colloquio:**
 
-Classi di progetto revisionato
+- Diagramma di sequenza "aggiunta prodotto" revisionato
+- Diagramma di sequenza "aggiunta nel carrello" iniziato
 
-Diagramma di sequenza "aggiunta nel carrello" (completato)
+
+*************************************************************************************************************************************************
+
+### **Quattordicesimo colloquio:**
+
+- Classi di progetto revisionato
+
+- Diagramma di sequenza "aggiunta nel carrello" (completato)
 
 
 *************************************************************************************************************************************************
 
 ### **Quindicesimo colloquio:**
 
-Classi di progetto non revisionato completamente (carrello & ordine)
+- Classi di progetto non revisionato completamente (carrello & ordine)
 
-Diagramma di sequenza "ricerca prodotto/categoria" (completato)
-Diagramma di sequenza "aggiunta nel carrello" da revisionare
+- Diagramma di sequenza "ricerca prodotto/categoria" (completato)
+- Diagramma di sequenza "aggiunta nel carrello" da revisionare
 
 
 *************************************************************************************************************************************************
 
 ### **Sedicesimo e diciassettesimo colloquio:**
 
-Implementazione codice per caso d'uso "aggiunta prodotto" in Java (completato)
+- Implementazione codice per caso d'uso "aggiunta prodotto" in Java (completato)
 
 
 *************************************************************************************************************************************************
 
 ### **Diciottesimo colloquio:**
 
-"Pulizia" codice Java (aggiunta relazione tra prodotto e magazzino)
-Diagramma di sequenza "creazione ordine" (completato)
+- "Pulizia" codice Java (aggiunta relazione tra prodotto e magazzino)
+- Diagramma di sequenza "creazione ordine" (completato)
 
 
 *************************************************************************************************************************************************
@@ -346,10 +346,10 @@ Diagramma di sequenza "creazione ordine" (completato)
 
 Obbiettivi incentrati sugli ordini
 
-creazione ordine (da sistemare)-> suddivisione ordini -> ordine e gestore ordini (commerciante)
-elaborazione ordine (aggiungere stato ordine) -> enum ordine
-assegnazione ordine -> visualizza ordini assegnati (corriere)
-modifica stato corriere
+- creazione ordine (da sistemare)-> suddivisione ordini -> ordine e gestore ordini (commerciante)
+- elaborazione ordine (aggiungere stato ordine) -> enum ordine
+- assegnazione ordine -> visualizza ordini assegnati (corriere)
+- modifica stato corriere
 
 
 *************************************************************************************************************************************************

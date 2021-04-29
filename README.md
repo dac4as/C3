@@ -339,3 +339,17 @@ Diagramma di sequenza "creazione ordine" (completato)
 
 
 *************************************************************************************************************************************************
+
+# ***Iterazione 2***
+
+### **primo colloquio:**
+
+Obbiettivi incentrati sugli ordini
+
+creazione ordine (da sistemare)-> suddivisione ordini -> ordine e gestore ordini (commerciante)
+elaborazione ordine (aggiungere stato ordine) -> enum ordine
+assegnazione ordine -> visualizza ordini assegnati (corriere)
+modifica stato corriere
+
+
+*************************************************************************************************************************************************

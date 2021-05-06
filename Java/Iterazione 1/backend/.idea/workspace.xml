@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice">
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final old.vpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final.vpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB 2.vpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB.vpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/Senza nome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/creazione ordine Sequence Diagram2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/modello7.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice" />
     <list id="b7d35377-f9bc-422f-b1ab-731cf8b28c23" name="Changes by Cardif" comment="" />
     <list id="c9dd6d62-dbbf-456b-8f48-b4bdddc2605a" name="Changes by Niccolò" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +94,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/Amuber/Users/Commerciante/4db542cf0a275d8a0a7f927b3b5e2c58/Ordini" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Iterazione 2/Amuber" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />
@@ -264,12 +255,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.Amuber" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.IOFileTXTTest" />
       <item itemvalue="Gradle.CommercianteTest.test" />
       <item itemvalue="Gradle.IOFileTXTTest.testreadProdotto" />
       <item itemvalue="Gradle.ClienteTest.test" />
       <item itemvalue="JUnit.IOFileTXTTest" />
-      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
@@ -338,6 +329,8 @@
       <workItem from="1620224249707" duration="1250000" />
       <workItem from="1620295379532" duration="2774000" />
       <workItem from="1620303427889" duration="475000" />
+      <workItem from="1620306006946" duration="17000" />
+      <workItem from="1620306228273" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

@@ -4,14 +4,15 @@ public class Prodotto {
 
     private final String nome;
     private final String marca;
-    private final int disponibilita;
+    private final int quantita;
     private final double prezzo;
     private final String descrizione;
+    //TODO codice prodotto
 
     public Prodotto(String nome, String marca, int disponibilita, double prezzo, String descrizione) {
         this.nome = nome;
         this.marca = marca;
-        this.disponibilita = disponibilita;
+        this.quantita = disponibilita;
         this.prezzo = prezzo;
         this.descrizione = descrizione;
     }
@@ -24,8 +25,8 @@ public class Prodotto {
         return marca;
     }
 
-    public int getDisponibilita() {
-        return disponibilita;
+    public int getQuantita() {
+        return quantita;
     }
 
     public double getPrezzo() {

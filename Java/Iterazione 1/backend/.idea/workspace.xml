@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice" />
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice">
+      <change afterPath="$PROJECT_DIR$/../../../Visual Paradigm/.C3 - LNB - Final.vpp.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final.vpp.bak_000f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Visual Paradigm/Pizzeria4.0.vpp.bak_000f" afterDir="false" />
+    </list>
     <list id="b7d35377-f9bc-422f-b1ab-731cf8b28c23" name="Changes by Cardif" comment="" />
     <list id="c9dd6d62-dbbf-456b-8f48-b4bdddc2605a" name="Changes by Niccolò" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +98,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Iterazione 2/Amuber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />
@@ -331,6 +335,7 @@
       <workItem from="1620303427889" duration="475000" />
       <workItem from="1620306006946" duration="17000" />
       <workItem from="1620306228273" duration="383000" />
+      <workItem from="1620735679566" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

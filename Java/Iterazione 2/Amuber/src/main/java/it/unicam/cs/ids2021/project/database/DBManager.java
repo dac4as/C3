@@ -3,7 +3,9 @@ package it.unicam.cs.ids2021.project.database;
 import it.unicam.cs.ids2021.project.users.Commerciante;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class DBManager {
@@ -17,19 +19,18 @@ public class DBManager {
     private final String url = "jdbc:mysql://crivelliserver.ddns.net:3306/amuber";
     private final String user = "admin";
     private final String password = "amuber99";
-    private Connection connection = null;
-    private Statement statement=null;
+    private Connection connection;
+    private Statement statement;
 
-    private DBManager(){
-        connectDB();
+    private DBManager() {
+        testDB();
     }
 
     public static DBManager getIstance() {
-        return istance==null?istance=new DBManager():istance;
+        return istance == null ? istance = new DBManager() : istance;
     }
 
-
-    public boolean testDB() {
+    private boolean testDB() {
         boolean result = true;
         try {
             if (connection == null || connection.isClosed()) {
@@ -37,20 +38,16 @@ public class DBManager {
                 result = false;
             }
             DatabaseMetaData data = connection.getMetaData();
-            System.out.println(
-                    "Details on DBMS - " + data.getDatabaseProductName() + "\n"
-                    + "  version:  " + data.getDriverMajorVersion() + "\n"
-                    + "  catalogs: " + data.getCatalogs() + "\n"
-                    + "  schemas:  " + data.getSchemas().getRow() + "\n"
-            );
-            closeDB();
+            System.out.println("Database connected, ready to go!");
+            System.out.println("User: " + data.getUserName() + "\n");
+            disconnectDB();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return result;
     }
 
-    public void closeDB() {
+    public void disconnectDB() {
         try {
             connection.close();
             istance = null;
@@ -61,36 +58,37 @@ public class DBManager {
         }
     }
 
-    private void connectDB() {
+    public void connectDB() {
         try {
             connection = DriverManager.getConnection(url, user, password);
             statement = connection.createStatement();
-            System.out.println("Database connected, ready to go!");
         } catch (SQLException e) {
             System.out.println("Problems in opening a connection to the DB");
             e.printStackTrace();
         }
     }
 
-
-
-     public Set<Commerciante> getCommercianti() {
-        Set<Commerciante> setCommerciante = new HashSet<>();
+    public List<Commerciante> getCommercianti() {
+        connectDB();
+        List<Commerciante> commercianteList = new ArrayList<>();
         String sql = "SELECT * FROM amuber.Commerciante";
-         try {
-             ResultSet res = statement.executeQuery(sql);
-             while(res.next()){
-                 setCommerciante.add(new Commerciante(
-                         res.getString("nome"),
-                         res.getString("cognome"),
-                         res.getString("email"),
-                         res.getString("recapito")));
-             }
-         } catch (SQLException throwables) {
-             throwables.printStackTrace();
-         }
-         return setCommerciante;
+        try {
+            ResultSet res = statement.executeQuery(sql);
+            while (res.next()) {
+                commercianteList.add(new Commerciante(
+                        res.getString("nome"),
+                        res.getString("cognome"),
+                        res.getString("email"),
+                        res.getString("recapito")));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        disconnectDB();
+        return commercianteList;
     }
+
+
 }
 
 /*public static void main(String[] args) {

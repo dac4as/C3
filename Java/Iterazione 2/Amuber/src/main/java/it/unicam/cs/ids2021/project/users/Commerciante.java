@@ -4,4 +4,7 @@ public class Commerciante extends User {
     public Commerciante(String nome, String cognome, String email, String recapito) {
         super(nome, cognome, email, recapito);
     }
+
+
+
 }

@@ -4,6 +4,7 @@ import it.unicam.cs.ids2021.project.enums.Categoria;
 import it.unicam.cs.ids2021.project.users.Commerciante;
 
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.Set;
 
 public class Magazzino {
@@ -37,5 +38,18 @@ public class Magazzino {
 
     public String getHashID() {
         return hashID;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Magazzino magazzino = (Magazzino) o;
+        return hashID.equals(magazzino.hashID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashID);
     }
 }

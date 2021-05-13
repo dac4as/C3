@@ -16,8 +16,8 @@ Amuber/Users/Cliente.java
  Amuber.Users.Cliente
 Amuber/Users/User.java
  Amuber.Users.User
-Amuber/Enums/Zona.java
- Amuber.Enums.Zona
+Amuber/Enums/Categoria.java
+ Amuber.Enums.Categoria
 Amuber/Viste/ICliente.java
  Amuber.Viste.ICliente
 Amuber/Prodotto.java
@@ -28,9 +28,5 @@ Amuber/Viste/ICommerciante.java
  Amuber.Viste.ICommerciante
 Amuber/JavaFx/Controller.java
  Amuber.JavaFx.Controller
-Amuber/Enums/Veicolo.java
- Amuber.Enums.Veicolo
-Amuber/Enums/Categoria.java
- Amuber.Enums.Categoria
 Amuber/Main.java
  Amuber.Main

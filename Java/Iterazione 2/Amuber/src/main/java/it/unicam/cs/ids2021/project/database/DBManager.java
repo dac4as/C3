@@ -1,11 +1,12 @@
 package it.unicam.cs.ids2021.project.database;
 
+import it.unicam.cs.ids2021.project.Magazzino;
+import it.unicam.cs.ids2021.project.Prodotto;
 import it.unicam.cs.ids2021.project.users.Commerciante;
 
 import java.sql.*;
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class DBManager {
@@ -22,6 +23,10 @@ public class DBManager {
     private Connection connection;
     private Statement statement;
 
+    public Statement getStatement() {
+        return statement;
+    }
+
     private DBManager() {
         testDB();
     }
@@ -30,7 +35,7 @@ public class DBManager {
         return istance == null ? istance = new DBManager() : istance;
     }
 
-    private boolean testDB() {
+    public boolean testDB() {
         boolean result = true;
         try {
             if (connection == null || connection.isClosed()) {
@@ -38,8 +43,10 @@ public class DBManager {
                 result = false;
             }
             DatabaseMetaData data = connection.getMetaData();
-            System.out.println("Database connected, ready to go!");
-            System.out.println("User: " + data.getUserName() + "\n");
+            System.out.println("#####################################\n"
+                    + "Database connected, ready to go!\n"
+                    + "User: " + data.getUserName() + "\n"
+                    + "#####################################");
             disconnectDB();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,7 +54,7 @@ public class DBManager {
         return result;
     }
 
-    public void disconnectDB() {
+    private void disconnectDB() {
         try {
             connection.close();
             istance = null;
@@ -58,7 +65,7 @@ public class DBManager {
         }
     }
 
-    public void connectDB() {
+    private void connectDB() {
         try {
             connection = DriverManager.getConnection(url, user, password);
             statement = connection.createStatement();
@@ -68,14 +75,26 @@ public class DBManager {
         }
     }
 
-    public List<Commerciante> getCommercianti() {
+    public void executeQuery(String sql) {
         connectDB();
-        List<Commerciante> commercianteList = new ArrayList<>();
+        try {
+            statement.execute(sql);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        disconnectDB();
+    }
+
+    public Set<Commerciante> getCommercianti() {
+        connectDB();
+
+        Set<Commerciante> commerciantes = new HashSet<>();
+
         String sql = "SELECT * FROM amuber.Commerciante";
         try {
             ResultSet res = statement.executeQuery(sql);
             while (res.next()) {
-                commercianteList.add(new Commerciante(
+                commerciantes.add(new Commerciante(
                         res.getString("nome"),
                         res.getString("cognome"),
                         res.getString("email"),
@@ -84,11 +103,119 @@ public class DBManager {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
         disconnectDB();
-        return commercianteList;
+        return commerciantes;
     }
 
+    public void addCommerciante(Commerciante commerciante) {
+        connectDB();
 
+        String sql = "INSERT INTO amuber.Commerciante (idCommerciante, nome, cognome, email, recapito) VALUES ('"
+                + commerciante.getHashID() + "', '"
+                + commerciante.getNome() + "', '"
+                + commerciante.getCognome() + "', '"
+                + commerciante.getEmail() + "', '"
+                + commerciante.getRecapito() + "')";
+        try {
+            statement.execute(sql);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        disconnectDB();
+    }
+
+    public Set<Magazzino> getMagazzini(Commerciante commerciante) {
+        connectDB();
+
+        String sql = "SELECT * FROM amuber.Magazzino WHERE idCommerciante = '"
+                + commerciante.getHashID() + "'";
+
+        Set<Magazzino> magazzinos = new HashSet<>();
+
+        try {
+            ResultSet res = statement.executeQuery(sql);
+            while (res.next()) {
+                magazzinos.add(new Magazzino(
+                        res.getString("nome"),
+                        res.getString("indirizzo"),
+                        commerciante));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        disconnectDB();
+        return magazzinos;
+    }
+
+    public void addMagazzino(Magazzino magazzino) {
+        connectDB();
+
+        String sql = "INSERT INTO amuber.Magazzino (idMagazzino, nome, indirizzo, idCommerciante) VALUES ('"
+                + magazzino.getHashID() + "', '"
+                + magazzino.getNome() + "', '"
+                + magazzino.getIndirizzo() + "', '"
+                + magazzino.getProprietario().getHashID() + "')";
+
+        try {
+            statement.execute(sql);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        disconnectDB();
+    }
+
+    //TODO sistemare (aggiungere categoria)
+/*    public Set<Prodotto> getProdotti(Magazzino magazzino) {
+        connectDB();
+
+        String sql = "SELECT * FROM amuber.Prodotto WHERE idMagazzino = '"
+                + magazzino.getHashID() + "'";
+
+        Set<Prodotto> prodottos = new HashSet<>();
+
+        try {
+            ResultSet res = statement.executeQuery(sql);
+            while (res.next()) {
+                prodottos.add(new Prodotto(
+                        res.getString("nome"),
+                        res.getString("marca"),
+                        Integer.getInteger(res.getString("disponibilita")),
+                        Double.parseDouble(res.getString("prezzo")),
+                        magazzino,
+                        res.getString("descrizione")));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        disconnectDB();
+        return prodottos;
+    }
+    */
+
+    public void addProddotto(Prodotto prodotto) {
+        connectDB();
+
+        String sql = "INSERT INTO amuber.Prodotto (idProdotto, nome, marca, disponibilita, prezzo, idMagazzino, descrizione) VALUES ('"
+                + prodotto.getHashID() + "', '"
+                + prodotto.getNome() + "', '"
+                + prodotto.getMarca() + "', '"
+                + prodotto.getQuantita() + "', '"
+                + prodotto.getPrezzo() + "', '"
+                + prodotto.getMagazzino().getHashID()
+                + prodotto.getDescrizione() + "')";
+        try {
+            statement.execute(sql);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        disconnectDB();
+    }
 }
 
 /*public static void main(String[] args) {

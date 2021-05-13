@@ -3,6 +3,9 @@ package it.unicam.cs.ids2021.project.users;
 
 import it.unicam.cs.ids2021.project.MD5;
 
+import java.util.Locale;
+import java.util.Objects;
+
 public abstract class User {
 
     //private String nomeUtente;
@@ -47,4 +50,16 @@ public abstract class User {
         return this.nome + " " + this.cognome + " " + this.email;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return hashID.equals(user.hashID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashID);
+    }
 }

@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice">
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/IGestore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/amuber.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/icommerciante.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/MD5Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/interaction/ICommercianteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/interaction/IGestoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Enums/Veicolo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amuber/Enums/Zona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/MD5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Magazzino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Prodotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/database/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/database/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Amuber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Amuber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICommerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Commerciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Visual Paradigm/C3 - LNB - Final.vpp" afterDir="false" />
-    </list>
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice" />
     <list id="b7d35377-f9bc-422f-b1ab-731cf8b28c23" name="Changes by Cardif" comment="" />
     <list id="c9dd6d62-dbbf-456b-8f48-b4bdddc2605a" name="Changes by Niccolò" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +94,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Iterazione 2/Amuber" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.121103115" />

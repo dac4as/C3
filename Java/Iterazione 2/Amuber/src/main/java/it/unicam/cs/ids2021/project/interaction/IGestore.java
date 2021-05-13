@@ -33,12 +33,12 @@ public class IGestore {
         }
     }
 
-    public boolean addProdotto(Prodotto prodotto) {
+    /*public boolean addProdotto(Prodotto prodotto) {
         if (manager.getProdotti(prodotto.getMagazzino()).contains(prodotto)) return false;
         else {
             manager.addProddotto(prodotto);
             return true;
         }
-    }
+    }*/
 
 }

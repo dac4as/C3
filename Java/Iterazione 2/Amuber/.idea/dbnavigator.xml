@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="7d2394e0-6c1f-4da5-907c-e3c40ff00b59">
-        <schema name="amuber" object-types="table, procedure, function, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="7d2394e0-6c1f-4da5-907c-e3c40ff00b59">

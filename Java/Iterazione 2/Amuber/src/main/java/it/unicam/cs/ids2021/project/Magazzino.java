@@ -40,6 +40,10 @@ public class Magazzino {
         return hashID;
     }
 
+    public String toString() {
+        return this.nome;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

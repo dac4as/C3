@@ -11,6 +11,8 @@ public class Prodotto {
     private final Categoria categoria;
     private final int quantita;
     private final double prezzo;
+
+
     private final Magazzino magazzino;
     private final String descrizione;
     private final String hashID;
@@ -34,6 +36,10 @@ public class Prodotto {
         return marca;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
     public int getQuantita() {
         return quantita;
     }
@@ -54,6 +60,17 @@ public class Prodotto {
         return descrizione;
     }
 
+    public String toString() {
+        return this.hashID + " - "
+                + this.nome + " - "
+                + this.marca + " - "
+                + this.categoria + " - "
+                + this.quantita + " - "
+                + this.prezzo + " - "
+                + this.magazzino.getHashID() + " - "
+                + this.descrizione;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -66,5 +83,4 @@ public class Prodotto {
     public int hashCode() {
         return Objects.hash(hashID);
     }
-
 }

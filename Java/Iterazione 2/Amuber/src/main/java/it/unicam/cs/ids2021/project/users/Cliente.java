@@ -4,21 +4,21 @@ import it.unicam.cs.ids2021.project.Carrello;
 
 public class Cliente extends User {
 
-    private final Carrello carrello;
-    private String indirizzo;
+    private Carrello carrello;
+    private final String indirizzo;
 
-    public Cliente(String nome, String cognome, String email, String recapito, String indirizzo, Carrello carrello) {
+    public Cliente(String nome, String cognome, String email, String recapito, String indirizzo) {
         super(nome, cognome, email, recapito);
 
         this.indirizzo = indirizzo;
-        this.carrello = new Carrello();
     }
 
     public String getIndirizzo() {
         return indirizzo;
     }
 
-    public void setIndirizzo(String indirizzo) {
-        this.indirizzo = indirizzo;
+    public Carrello getCarrello() {
+        return carrello;
     }
+
 }

@@ -47,7 +47,7 @@ public abstract class User {
     }
 
     public String toString() {
-        return this.nome + " " + this.cognome + " " + this.email;
+        return this.email;
     }
 
     @Override

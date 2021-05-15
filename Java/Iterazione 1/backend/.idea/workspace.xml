@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice" />
+    <list default="true" id="d0922eef-ebae-4c06-a1d3-79196bd8002e" name="Default Changelist" comment="pulizia del codice">
+      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/amuber.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/database/DBManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/users/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/0bc427c2-fdf0-41de-8e37-cbdf70a2c161/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/.idea/dataSources/f64a0713-0520-4dfa-8965-cd9c366297db/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Magazzino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/Prodotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/database/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/database/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Amuber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Amuber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICommerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/ICommerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/interaction/IGestore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/MagManager.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/MagManagerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/amuber.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/gui/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/sources/icommerciante.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Commerciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/Commerciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/main/java/it/unicam/cs/ids2021/project/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/interaction/ICommercianteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/interaction/ICommercianteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iterazione 2/Amuber/src/test/java/it/unicam/cs/ids2021/project/interaction/IGestoreTest.java" beforeDir="false" />
+    </list>
     <list id="b7d35377-f9bc-422f-b1ab-731cf8b28c23" name="Changes by Cardif" comment="" />
     <list id="c9dd6d62-dbbf-456b-8f48-b4bdddc2605a" name="Changes by Niccolò" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -335,6 +367,7 @@
       <workItem from="1620815448386" duration="576000" />
       <workItem from="1620816040262" duration="4199000" />
       <workItem from="1620914452519" duration="1586000" />
+      <workItem from="1621078105029" duration="2546000" />
     </task>
     <task id="LOCAL-00001" summary="IL PROGETTO E' CORROTTO&#10;&#10;viene rifatto salvando le classi, che è l'unica cosa buona che è rimasta&#10;(non giocate con gradle)">
       <created>1608566631297</created>

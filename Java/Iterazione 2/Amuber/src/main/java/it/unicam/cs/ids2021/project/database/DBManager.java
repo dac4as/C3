@@ -2,6 +2,8 @@ package it.unicam.cs.ids2021.project.database;
 
 import it.unicam.cs.ids2021.project.Magazzino;
 import it.unicam.cs.ids2021.project.Prodotto;
+import it.unicam.cs.ids2021.project.enums.Categoria;
+import it.unicam.cs.ids2021.project.users.Cliente;
 import it.unicam.cs.ids2021.project.users.Commerciante;
 
 import java.sql.*;
@@ -168,8 +170,7 @@ public class DBManager {
         disconnectDB();
     }
 
-    //TODO sistemare (aggiungere categoria)
-/*    public Set<Prodotto> getProdotti(Magazzino magazzino) {
+    public Set<Prodotto> getProdotti(Magazzino magazzino) {
         connectDB();
 
         String sql = "SELECT * FROM amuber.Prodotto WHERE idMagazzino = '"
@@ -183,8 +184,9 @@ public class DBManager {
                 prodottos.add(new Prodotto(
                         res.getString("nome"),
                         res.getString("marca"),
-                        Integer.getInteger(res.getString("disponibilita")),
-                        Double.parseDouble(res.getString("prezzo")),
+                        Categoria.valueOf(res.getString("categoria")),
+                        res.getInt("disponibilita"),
+                        res.getDouble("prezzo"),
                         magazzino,
                         res.getString("descrizione")));
             }
@@ -195,19 +197,21 @@ public class DBManager {
         disconnectDB();
         return prodottos;
     }
-    */
 
     public void addProddotto(Prodotto prodotto) {
         connectDB();
 
-        String sql = "INSERT INTO amuber.Prodotto (idProdotto, nome, marca, disponibilita, prezzo, idMagazzino, descrizione) VALUES ('"
+        String sql = "INSERT INTO amuber.Prodotto (idProdotto, nome, marca, categoria, disponibilita, prezzo, idMagazzino, descrizione) VALUES ('"
                 + prodotto.getHashID() + "', '"
                 + prodotto.getNome() + "', '"
                 + prodotto.getMarca() + "', '"
+                + prodotto.getCategoria() + "', '"
                 + prodotto.getQuantita() + "', '"
                 + prodotto.getPrezzo() + "', '"
-                + prodotto.getMagazzino().getHashID()
-                + prodotto.getDescrizione() + "')";
+                + prodotto.getMagazzino().getHashID() + "', '"
+                + prodotto.getDescrizione() + "') "
+                + "ON DUPLICATE KEY UPDATE disponibilita = disponibilita + "
+                + prodotto.getQuantita() + ";";
         try {
             statement.execute(sql);
         } catch (SQLException throwables) {
@@ -215,6 +219,34 @@ public class DBManager {
         }
 
         disconnectDB();
+    }
+
+    public Set<Cliente> getClienti() {
+        connectDB();
+
+/*
+        Set<Cliente> clientes = new HashSet<>();
+
+        String sql = "SELECT * FROM amuber.Cliente";
+        try {
+            ResultSet res = statement.executeQuery(sql);
+            while (res.next()) {
+                clientes.add(new Cliente(
+                        res.getString("nome"),
+                        res.getString("cognome"),
+                        res.getString("email"),
+                        res.getString("recapito")));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+*/
+
+        disconnectDB();
+        return null;
+    }
+
+    public void addCliente(Cliente cliente) {
     }
 }
 

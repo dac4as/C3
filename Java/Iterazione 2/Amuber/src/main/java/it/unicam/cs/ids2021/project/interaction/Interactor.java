@@ -1,44 +1,20 @@
-package it.unicam.cs.ids2021.project.gui;
+package it.unicam.cs.ids2021.project.interaction;
 
-import it.unicam.cs.ids2021.project.Magazzino;
-import it.unicam.cs.ids2021.project.database.DBManager;
-import it.unicam.cs.ids2021.project.interaction.ICliente;
-import it.unicam.cs.ids2021.project.interaction.ICommerciante;
-import it.unicam.cs.ids2021.project.interaction.ICorriere;
+import it.unicam.cs.ids2021.project.service.DBManager;
+import it.unicam.cs.ids2021.project.storage.Magazzino;
 import it.unicam.cs.ids2021.project.users.Commerciante;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 
-import java.io.File;
-
-public class Amuber extends Application {
+public class Interactor {
 
     private final ICliente iCliente = new ICliente();
     private final ICommerciante iCommerciante = new ICommerciante();
     private final ICorriere iCorriere = new ICorriere();
     private final DBManager manager = DBManager.getIstance();
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) {
-        try {
-            primaryStage.setTitle("Amuber");
-            primaryStage.setScene(new Scene(FXMLLoader.load(new File("src/main/java/it/unicam/cs/ids2021/project/gui/amuber.fxml").toURI().toURL())));
-            primaryStage.show();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
 
     public ComboBox<Commerciante> lista_commercianti;
     public Button select_commerciante;
@@ -77,6 +53,7 @@ public class Amuber extends Application {
 
     public void commercianteResetted() {
         iCommerciante.setCommerciante(null);
+        lista_commercianti.setValue(null);
         lista_commercianti.setDisable(false);
         select_commerciante.setDisable(false);
         reset_commerciante.setDisable(true);
@@ -96,6 +73,7 @@ public class Amuber extends Application {
 
     public void magazzinoSelected() {
         iCommerciante.setMagazzino(lista_magazzini.getValue());
+        lista_magazzini.setDisable(true);
         select_magazzino.setDisable(true);
         reset_magazzino.setDisable(false);
         mag_id.setText(iCommerciante.getMagazzino().getHashID());
@@ -106,6 +84,7 @@ public class Amuber extends Application {
     public void magazzinoResetted() {
         iCommerciante.setMagazzino(null);
         lista_magazzini.setValue(null);
+        lista_magazzini.setDisable(false);
         select_magazzino.setDisable(false);
         reset_magazzino.setDisable(true);
         mag_id.setText("");

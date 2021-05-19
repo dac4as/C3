@@ -1,12 +1,15 @@
-package it.unicam.cs.ids2021.project;
+package it.unicam.cs.ids2021.project.service;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-public interface MD5 {
-    static String getHash2(String... strings) {
+public final class MD5 {
+    @NotNull
+    public static String getHash2(String... strings) {
 
         StringBuilder toReturn = new StringBuilder();
 

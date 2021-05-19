@@ -1,15 +1,11 @@
-package it.unicam.cs.ids2021.project;
+package it.unicam.cs.ids2021.project.storage;
 
-import it.unicam.cs.ids2021.project.enums.Categoria;
+import it.unicam.cs.ids2021.project.service.MD5;
 import it.unicam.cs.ids2021.project.users.Commerciante;
 
-import java.util.HashMap;
 import java.util.Objects;
-import java.util.Set;
 
 public class Magazzino {
-
-    private HashMap<Categoria, Set<Prodotto>> listaProdotti;//è una mappa
 
     private final String nome;
     private final Commerciante proprietario;

@@ -1,11 +1,10 @@
-package it.unicam.cs.ids2021.project;
+package it.unicam.cs.ids2021.project.service;
 
 import it.unicam.cs.ids2021.project.users.Commerciante;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 class MD5Test {
-
     @Test
     void getHash2() {
 
@@ -30,5 +29,4 @@ class MD5Test {
         Assert.assertTrue(comm1.getHashID().equals("e152bebdada49257c309f26518099257"));
         Assert.assertTrue(comm2.getHashID().equals("af60bcd80b2ff878a09c67ed2b4ee885"));
     }
-
 }
